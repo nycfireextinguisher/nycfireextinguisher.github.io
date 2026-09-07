@@ -1,208 +1,870 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>纽约消防知识 | 灭火器检查 维护 充装资讯</title>
+<title>纽约消防资讯 | 灭火器检查 年检 维护 充装知识 | NYC Fire Safety</title>
 
-<meta name="description" content="纽约灭火器检查、灭火器年检、灭火器维护、灭火器充装相关知识。餐厅消防安全、FDNY检查资讯、纽约中文消防服务。">
+<meta name="description" content="纽约消防资讯与灭火器知识。了解灭火器检查、年检、维护、充装、餐厅消防安全及法拉盛灭火器服务。纽约中文消防服务，电话 646-201-6351。">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif;
+    line-height:1.7;
+    color:#10213b;
+    background:#f6f8fb;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+.nav-links a{
+    color:#10213b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.nav-links .active{
+    color:#e50914;
+}
+
+.top-phone{
+    background:#e50914;
+    color:#fff !important;
+    padding:12px 20px;
+    border-radius:30px;
+    box-shadow:0 5px 16px rgba(229,9,20,.25);
+}
+
+.language{
+    font-size:13px !important;
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:420px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,28,52,.93) 0%,
+            rgba(8,28,52,.82) 48%,
+            rgba(8,28,52,.46) 100%
+        ),
+        url("nyc-fire-extinguisher-hero.jpg") center/cover no-repeat;
+
+    color:white;
+}
+
+.hero-content{
+    max-width:720px;
+    padding:70px 0;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.15;
+    margin:0 0 14px;
+}
+
+.hero h1 span{
+    color:#ff2a2a;
+}
+
+.hero-subtitle{
+    font-size:23px;
+    font-weight:700;
+    margin:0 0 10px;
+}
+
+.hero-description{
+    color:#e3e9f0;
+    font-size:17px;
+    max-width:650px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:25px;
+}
+
+.btn{
+    padding:14px 26px;
+    border-radius:7px;
+    display:inline-block;
+    font-size:16px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:white;
+    box-shadow:0 6px 18px rgba(229,9,20,.3);
+}
+
+.btn-green{
+    background:#20b842;
+    color:white;
+    box-shadow:0 6px 18px rgba(32,184,66,.22);
+}
+
+
+/* =========================
+MAIN
+========================= */
+
+main{
+    padding:65px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:38px;
+}
+
+.section-heading h2{
+    font-size:34px;
+    margin:0 0 8px;
+}
+
+.section-heading span{
+    color:#e50914;
+}
+
+.section-heading p{
+    margin:0;
+    color:#748095;
+}
+
+
+/* =========================
+ARTICLE GRID
+========================= */
+
+.article-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.article-card{
+    background:white;
+    border-radius:14px;
+    padding:28px;
+    border:1px solid #e9edf2;
+    box-shadow:0 7px 24px rgba(16,33,59,.07);
+    transition:.25s;
+    display:flex;
+    flex-direction:column;
+}
+
+.article-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 13px 32px rgba(16,33,59,.13);
+}
+
+.article-icon{
+    width:52px;
+    height:52px;
+    border-radius:12px;
+    background:#fff1f1;
+    color:#e50914;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    margin-bottom:18px;
+}
+
+.article-category{
+    color:#e50914;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.5px;
+    margin-bottom:8px;
+}
+
+.article-card h2{
+    font-size:21px;
+    line-height:1.4;
+    margin:0 0 12px;
+}
+
+.article-card h2 a{
+    color:#10213b;
+}
+
+.article-card h2 a:hover{
+    color:#e50914;
+}
+
+.article-card p{
+    color:#697588;
+    font-size:14px;
+    margin:0 0 20px;
+    flex-grow:1;
+}
+
+.read-more{
+    color:#e50914;
+    font-weight:700;
+    font-size:14px;
+}
+
+
+/* =========================
+QUICK LINKS
+========================= */
+
+.quick-links{
+    margin-top:55px;
+    background:white;
+    border-radius:14px;
+    padding:35px;
+    box-shadow:0 7px 24px rgba(16,33,59,.06);
+}
+
+.quick-links h2{
+    margin-top:0;
+    text-align:center;
+}
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-top:25px;
+}
+
+.quick-item{
+    background:#f7f9fc;
+    border:1px solid #edf0f4;
+    border-radius:10px;
+    padding:17px;
+    text-align:center;
+    color:#10213b;
+    font-weight:700;
+    transition:.2s;
+}
+
+.quick-item:hover{
+    color:#e50914;
+    border-color:#e50914;
+}
+
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+    background:
+        linear-gradient(rgba(8,28,52,.72),rgba(8,28,52,.80)),
+        url("nyc-skyline.jpg") center/cover no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.cta h2{
+    font-size:36px;
+    margin:0 0 5px;
+}
+
+.cta p{
+    color:#dce5ef;
+    margin:0 0 25px;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#07192e;
+    color:#b8c2cf;
+    padding:30px 0;
+}
+
+.footer-content{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.footer-brand img{
+    height:48px;
+    width:auto;
+}
+
+.footer-text{
+    font-size:12px;
+}
+
+.footer-links a{
+    color:#b8c2cf;
+    margin-left:18px;
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:950px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .article-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .quick-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        min-height:auto;
+    }
+
+    .hero-content{
+        padding:55px 0;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero-subtitle{
+        font-size:20px;
+    }
+
+    .article-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quick-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+
+}
+
+</style>
 
 </head>
 
-<body style="font-family:Arial,sans-serif;margin:0;line-height:1.7;color:#222;background:#f7f7f7;">
 
-<div style="background:#111;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+<body>
 
-<div style="color:white;font-size:26px;font-weight:bold;">
-🔥 Fire Safety
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="container nav">
+
+<a href="/cn/" class="logo">
+
+<img src="logo.png"
+     alt="NYC Fire Safety 纽约灭火器服务">
+
+</a>
+
+
+<nav class="nav-links">
+
+<a href="/cn/">首页</a>
+
+<a href="/cn/#services">服务项目</a>
+
+<a href="/cn/#areas">服务区域</a>
+
+<a href="/cn/blog.html" class="active">消防资讯</a>
+
+<a href="/cn/#contact">联系我们</a>
+
+<a href="tel:16462016351" class="top-phone">
+☎ 646-201-6351
+</a>
+
+<a href="/" class="language">
+English
+</a>
+
+</nav>
+
 </div>
 
-<div>
-<a href="/cn/" style="color:white;margin:0 10px;text-decoration:none;">首页</a>
+</header>
 
-<a href="/cn/blog.html" style="color:white;margin:0 10px;text-decoration:none;">消防资讯</a>
 
-<a href="/" style="color:white;margin:0 10px;text-decoration:none;">English</a>
-</div>
 
-</div>
+<!-- =========================
+HERO
+========================= -->
 
-<div style="background:#c40000;color:white;padding:55px 20px;text-align:center;">
+<section class="hero">
 
-<h1>纽约消防资讯</h1>
+<div class="container">
 
-<p style="font-size:22px;">
-灭火器检查 • FDNY资讯 • 餐厅消防安全
+<div class="hero-content">
+
+<h1>
+纽约<span>消防资讯</span>
+</h1>
+
+<p class="hero-subtitle">
+灭火器检查 · 年检 · 维护 · 充装
 </p>
 
-<p>
-纽约华人商家消防知识中心
+<p class="hero-description">
+为纽约餐厅、商铺、办公室、仓库和商业楼宇提供实用的灭火器知识、检查资讯与消防安全内容。
 </p>
 
-<div style="background:#ff4d00;color:white;padding:14px;margin:18px auto;font-size:22px;font-weight:bold;text-align:center;border-radius:8px;max-width:900px;">
-🔥 纽约灭火器检查与消防知识 🔥
-</div>
 
-<p>
+<div class="hero-buttons">
 
 <a href="tel:16462016351"
-style="background:white;color:#c40000;padding:14px 24px;text-decoration:none;font-weight:bold;border-radius:6px;display:inline-block;margin:6px;">
-电话 646-201-6351
+class="btn btn-red">
+☎ 646-201-6351
 </a>
 
 <a href="https://wa.me/16462016351?text=你好，我需要纽约灭火器服务"
-style="background:#25D366;color:white;padding:14px 24px;text-decoration:none;font-weight:bold;border-radius:6px;display:inline-block;margin:6px;">
-WhatsApp
+class="btn btn-green">
+WhatsApp 咨询
 </a>
 
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+ARTICLES
+========================= -->
+
+<main>
+
+<div class="container">
+
+
+<div class="section-heading">
+
+<h2>
+<span>🔥</span> 最新消防资讯
+</h2>
+
+<p>
+纽约灭火器检查、年检、餐厅消防安全及本地服务资讯
 </p>
 
 </div>
 
-<div style="max-width:1000px;margin:30px auto;padding:0 20px;">
 
-<section style="background:white;padding:25px;border-radius:10px;margin-bottom:25px;">
+<div class="article-grid">
 
-<h2>最新文章</h2>
 
-<p>
-纽约餐厅、商铺、办公室、仓库灭火器检查及消防知识。
-</p>
+<!-- ARTICLE 1 -->
 
-</section>
+<article class="article-card">
 
-<section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
+<div class="article-icon">📋</div>
 
-<div style="background:white;padding:24px;border-radius:10px;border:1px solid #ddd;">
+<div class="article-category">
+灭火器检查
+</div>
 
 <h2>
-<a href="monthly-vs-yearly-inspection.html" style="color:#c40000;text-decoration:none;">
+<a href="monthly-vs-yearly-inspection.html">
 灭火器每月检查和年度检查有什么区别？
 </a>
 </h2>
 
 <p>
-了解每月检查与年度专业检查的区别。
+了解日常目视检查与年度专业检查的主要区别，以及商业客户为什么需要定期检查灭火器。
 </p>
 
-<a href="monthly-vs-yearly-inspection.html">
-阅读全文
+<a href="monthly-vs-yearly-inspection.html"
+class="read-more">
+阅读全文 →
 </a>
 
+</article>
+
+
+
+<!-- ARTICLE 2 -->
+
+<article class="article-card">
+
+<div class="article-icon">🍴</div>
+
+<div class="article-category">
+餐厅消防安全
 </div>
 
-
-<div style="background:white;padding:24px;border-radius:10px;border:1px solid #ddd;">
-
 <h2>
-<a href="restaurant-fire-extinguisher-inspection-nyc.html" style="color:#c40000;text-decoration:none;">
+<a href="restaurant-fire-extinguisher-inspection-nyc.html">
 纽约餐厅灭火器检查要求
 </a>
 </h2>
 
 <p>
-餐厅灭火器多久检查一次？FDNY检查时会看什么？
+餐厅灭火器多久需要检查？检查标签、压力和设备状态有哪些需要注意的地方？
 </p>
 
-<a href="restaurant-fire-extinguisher-inspection-nyc.html">
-阅读全文
+<a href="restaurant-fire-extinguisher-inspection-nyc.html"
+class="read-more">
+阅读全文 →
 </a>
 
+</article>
+
+
+
+<!-- ARTICLE 3 -->
+
+<article class="article-card">
+
+<div class="article-icon">📍</div>
+
+<div class="article-category">
+法拉盛本地服务
 </div>
 
-
-<div style="background:white;padding:24px;border-radius:10px;border:1px solid #ddd;">
-
 <h2>
-<a href="flushing-fire-extinguisher-inspection.html" style="color:#c40000;text-decoration:none;">
+<a href="flushing-fire-extinguisher-inspection.html">
 法拉盛灭火器检查服务
 </a>
 </h2>
 
 <p>
-法拉盛中餐馆、商铺、办公室灭火器检查、年检、维护、充装服务。
+面向法拉盛中餐馆、商铺、办公室和商业客户的灭火器检查、年检、维护与充装服务。
 </p>
 
-<a href="flushing-fire-extinguisher-inspection.html">
-阅读全文
+<a href="flushing-fire-extinguisher-inspection.html"
+class="read-more">
+阅读全文 →
 </a>
 
+</article>
+
+
+
+<!-- ARTICLE 4 -->
+
+<article class="article-card">
+
+<div class="article-icon">🧯</div>
+
+<div class="article-category">
+灭火器充装
 </div>
 
-
-<div style="background:white;padding:24px;border-radius:10px;border:1px solid #ddd;">
-
 <h2>
-<a href="纽约灭火器充装.html" style="color:#c40000;text-decoration:none;">
+<a href="纽约灭火器充装.html">
 纽约灭火器充装服务
 </a>
 </h2>
 
 <p>
-灭火器什么时候需要充装？纽约灭火器 refill 服务介绍。
+灭火器什么时候可能需要充装？了解纽约商业灭火器 refill、检查及维护服务。
 </p>
 
-<a href="纽约灭火器充装.html">
-阅读全文
+<a href="纽约灭火器充装.html"
+class="read-more">
+阅读全文 →
 </a>
 
+</article>
+
+
+
+<!-- ARTICLE 5 -->
+
+<article class="article-card">
+
+<div class="article-icon">✅</div>
+
+<div class="article-category">
+灭火器年检
 </div>
-  
-
-
-
-  <div style="background:white;padding:24px;border-radius:10px;border:1px solid #ddd;">
 
 <h2>
-<a href="纽约灭火器年检.html" style="color:#c40000;text-decoration:none;">
+<a href="纽约灭火器年检.html">
 纽约灭火器年检服务
 </a>
 </h2>
 
 <p>
-纽约灭火器年检、检查标签更新、餐厅和商业客户灭火器检查服务。
+了解纽约灭火器年度检查、检查标签及餐厅、办公室和商业客户相关服务。
 </p>
 
-<a href="纽约灭火器年检.html">
-阅读全文
+<a href="纽约灭火器年检.html"
+class="read-more">
+阅读全文 →
 </a>
+
+</article>
+
 
 </div>
 
 
 
+<!-- =========================
+QUICK LINKS
+========================= -->
 
+<section class="quick-links">
 
+<h2>
+常用服务
+</h2>
 
-  
+<div class="quick-grid">
 
-  
+<a href="/cn/"
+class="quick-item">
+🏠 中文首页
+</a>
+
+<a href="/cn/flushing-fire-extinguisher-inspection.html"
+class="quick-item">
+📍 法拉盛灭火器
+</a>
+
+<a href="/cn/纽约灭火器年检.html"
+class="quick-item">
+📋 灭火器年检
+</a>
+
+<a href="/cn/纽约灭火器充装.html"
+class="quick-item">
+🧯 灭火器充装
+</a>
+
+</div>
 
 </section>
 
-<section style="background:#111;color:white;padding:30px;border-radius:10px;text-align:center;margin-top:25px;">
 
-<h2>需要纽约灭火器服务？</h2>
+</div>
+
+</main>
+
+
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+需要纽约灭火器服务？
+</h2>
 
 <p>
-灭火器检查 · 维护 · 充装
+检查 · 年检 · 维护 · 充装
 </p>
 
-<p>
+
+<div class="hero-buttons"
+style="justify-content:center;">
 
 <a href="tel:16462016351"
-style="background:#c40000;color:white;padding:14px 24px;text-decoration:none;font-weight:bold;border-radius:6px;display:inline-block;">
+class="btn btn-red">
 
-646-201-6351
+☎ 646-201-6351
 
 </a>
 
-</p>
+
+<a href="https://wa.me/16462016351?text=你好，我想预约纽约灭火器服务"
+class="btn btn-green">
+
+WhatsApp 咨询
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+     alt="NYC Fire Safety">
+
+<div class="footer-text">
+
+<strong style="color:white;font-size:15px;">
+NYC FIRE SAFETY
+</strong>
+
+<br>
+
+纽约商业灭火器服务
+
 </div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="/cn/">首页</a>
+
+<a href="/cn/#services">服务项目</a>
+
+<a href="/cn/#areas">服务区域</a>
+
+<a href="/cn/blog.html">消防资讯</a>
+
+<a href="tel:16462016351">联系我们</a>
+
+<a href="/">English</a>
+
+</div>
+
+</div>
+
+</footer>
+
 
 </body>
 </html>
