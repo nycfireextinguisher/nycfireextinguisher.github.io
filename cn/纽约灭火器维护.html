@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>纽约灭火器维护服务 | 灭火器检查 维修 充装 NYC</title>
+
+<meta name="description" content="纽约灭火器维护服务，提供灭火器检查、维护、压力检查、部件检查及充装服务。服务餐厅、商铺、办公室、仓库及商业楼宇。中文服务，电话 646-201-6351。">
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,"Microsoft YaHei","PingFang SC",sans-serif;
+    color:#10213b;
+    background:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+.nav-links a{
+    color:#10213b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.top-phone{
+    background:#e50914;
+    color:#fff !important;
+    padding:12px 20px;
+    border-radius:30px;
+    box-shadow:0 5px 16px rgba(229,9,20,.25);
+}
+
+.language{
+    font-size:13px !important;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:500px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.98) 0%,
+            rgba(255,255,255,.94) 43%,
+            rgba(255,255,255,.45) 68%,
+            rgba(255,255,255,.10) 100%
+        ),
+        url("nyc-fire-extinguisher-hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:690px;
+    padding:75px 0;
+}
+
+.hero h1{
+    font-size:50px;
+    line-height:1.15;
+    margin:0 0 15px;
+    letter-spacing:-1px;
+}
+
+.red{
+    color:#e50914;
+}
+
+.hero-subtitle{
+    font-size:27px;
+    font-weight:700;
+    margin:0 0 10px;
+}
+
+.hero-description{
+    font-size:18px;
+    color:#4c586a;
+    margin-bottom:25px;
+}
+
+.hero-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin:24px 0 30px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:700;
+    font-size:15px;
+}
+
+.feature-icon{
+    background:#e50914;
+    color:#fff;
+    width:34px;
+    height:34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    padding:15px 28px;
+    border-radius:7px;
+    display:inline-block;
+    font-size:17px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:white;
+    box-shadow:0 6px 18px rgba(229,9,20,.25);
+}
+
+.btn-green{
+    background:#20b842;
+    color:white;
+    box-shadow:0 6px 18px rgba(32,184,66,.20);
+}
+
+/* =========================
+SECTION
+========================= */
+
+section{
+    padding:70px 0;
+}
+
+.section-light{
+    background:#f6f8fb;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-title h2{
+    font-size:34px;
+    margin:0 0 6px;
+}
+
+.section-title h2 span{
+    color:#e50914;
+}
+
+.section-title p{
+    color:#758092;
+    margin:0;
+}
+
+/* =========================
+INTRO
+========================= */
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:45px;
+    align-items:center;
+}
+
+.intro-text h2{
+    font-size:34px;
+    margin-top:0;
+    margin-bottom:16px;
+}
+
+.intro-text p{
+    color:#657185;
+    font-size:16px;
+}
+
+.intro-box{
+    background:#10213b;
+    color:white;
+    padding:32px;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(16,33,59,.16);
+}
+
+.intro-box h3{
+    margin-top:0;
+    font-size:24px;
+}
+
+.intro-box ul{
+    padding-left:20px;
+    margin-bottom:0;
+}
+
+.intro-box li{
+    margin-bottom:10px;
+}
+
+/* =========================
+SERVICE CARDS
+========================= */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:13px;
+    padding:30px 26px;
+    border:1px solid #edf0f4;
+    box-shadow:0 7px 25px rgba(16,33,59,.08);
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(16,33,59,.13);
+}
+
+.service-icon{
+    width:58px;
+    height:58px;
+    border-radius:14px;
+    background:#fff1f1;
+    color:#e50914;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:29px;
+    margin-bottom:16px;
+}
+
+.service-card h3{
+    font-size:21px;
+    margin:0 0 10px;
+}
+
+.service-card p{
+    color:#697588;
+    font-size:15px;
+    margin:0;
+}
+
+/* =========================
+WHEN NEEDED
+========================= */
+
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.info-card{
+    background:#fff;
+    border-radius:13px;
+    padding:30px;
+    border:1px solid #e9edf2;
+    box-shadow:0 7px 24px rgba(16,33,59,.07);
+}
+
+.info-card h2{
+    margin-top:0;
+    font-size:27px;
+}
+
+.info-card ul{
+    padding-left:21px;
+}
+
+.info-card li{
+    margin-bottom:9px;
+    color:#566276;
+}
+
+/* =========================
+CUSTOMERS
+========================= */
+
+.customer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.customer-card{
+    background:#fff;
+    border:1px solid #edf0f4;
+    border-radius:12px;
+    padding:26px 20px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(16,33,59,.06);
+}
+
+.customer-icon{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.customer-card strong{
+    display:block;
+    font-size:17px;
+}
+
+/* =========================
+AREAS
+========================= */
+
+.area-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.area-item{
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    border-left:4px solid #e50914;
+    box-shadow:0 5px 18px rgba(16,33,59,.06);
+}
+
+.area-item strong{
+    display:block;
+    font-size:18px;
+}
+
+.area-item span{
+    color:#758092;
+    font-size:14px;
+}
+
+/* =========================
+RELATED
+========================= */
+
+.related{
+    background:white;
+    border-radius:14px;
+    padding:32px;
+    box-shadow:0 7px 25px rgba(16,33,59,.07);
+    border:1px solid #edf0f4;
+}
+
+.related h2{
+    margin-top:0;
+}
+
+.related ul{
+    padding-left:20px;
+}
+
+.related li{
+    margin-bottom:10px;
+}
+
+.related a{
+    color:#e50914;
+    font-weight:700;
+}
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+    background:
+        linear-gradient(rgba(8,28,52,.72),rgba(8,28,52,.80)),
+        url("nyc-skyline.jpg") center/cover no-repeat;
+
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    font-size:36px;
+    margin:0 0 6px;
+}
+
+.cta p{
+    margin:0 0 25px;
+    color:#dbe3ed;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#07192e;
+    color:#b8c2cf;
+    padding:30px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.footer-brand img{
+    height:48px;
+    width:auto;
+}
+
+.footer-links a{
+    color:#b8c2cf;
+    margin-left:18px;
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    .nav{
+        padding:12px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+        background:
+            linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.92)),
+            url("nyc-fire-extinguisher-hero.jpg") center/cover;
+    }
+
+    .hero-content{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .intro-grid,
+    .two-column{
+        grid-template-columns:1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .customer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .area-list{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:550px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero-subtitle{
+        font-size:22px;
+    }
+
+    .service-grid,
+    .customer-grid,
+    .area-list{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="container nav">
+
+<a href="/cn/" class="logo">
+<img src="logo.png"
+alt="NYC Fire Safety"
+style="height:58px;width:auto;display:block;">
+</a>
+
+<nav class="nav-links">
+
+<a href="/cn/">首页</a>
+
+<a href="/cn/#services">服务项目</a>
+
+<a href="/cn/#areas">服务区域</a>
+
+<a href="/cn/blog.html">消防资讯</a>
+
+<a href="/cn/#contact">关于我们</a>
+
+<a href="tel:16462016351" class="top-phone">
+☎ 646-201-6351
+</a>
+
+<a href="/" class="language">English</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h1>
+纽约<span class="red">灭火器维护</span>服务
+</h1>
+
+<p class="hero-subtitle">
+检查 · 维护 · 维修 · 充装
+</p>
+
+<p class="hero-description">
+为纽约餐厅、商铺、办公室、仓库和商业楼宇提供专业灭火器维护服务。
+</p>
+
+<div class="hero-features">
+
+<div class="feature">
+<span class="feature-icon">✓</span>
+专业维护
+</div>
+
+<div class="feature">
+<span class="feature-icon">🧯</span>
+商业灭火器服务
+</div>
+
+<div class="feature">
+<span class="feature-icon">中</span>
+中文服务
+</div>
+
+<div class="feature">
+<span class="feature-icon">▦</span>
+覆盖纽约五大区
+</div>
+
+<div class="feature">
+<span class="feature-icon">✓</span>
+持有纽约消防局执照
+</div>
+
+</div>
+
+
+<div class="hero-buttons">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=你好，我想咨询纽约灭火器维护服务"
+class="btn btn-green">
+短信预约
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+INTRO
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="intro-grid">
+
+<div class="intro-text">
+
+<h2>
+什么是<span class="red">灭火器维护</span>？
+</h2>
+
+<p>
+灭火器维护是根据灭火器的实际状态，对压力、外观、喷管、阀门、安全销及其他主要部件进行检查，并根据需要进行进一步处理。
+</p>
+
+<p>
+如果灭火器出现压力异常、部件损坏、使用过、标签问题或其他异常情况，应由专业人员检查后确定是否需要维护、充装或其他服务。
+</p>
+
+<p>
+定期维护可以帮助商业场所及时发现灭火器问题，避免设备长期处于不适当的状态。
+</p>
+
+</div>
+
+
+<div class="intro-box">
+
+<h3>常见维护检查项目</h3>
+
+<ul>
+<li>检查灭火器压力</li>
+<li>检查罐体外观</li>
+<li>检查喷管和阀门</li>
+<li>检查安全销及封条</li>
+<li>检查标签和维护记录</li>
+<li>判断是否需要充装或进一步维护</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+SERVICES
+========================= -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+<span>🛠️</span> 灭火器维护服务
+</h2>
+
+<p>
+根据灭火器实际情况提供相应检查与维护
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service-card">
+
+<div class="service-icon">🔍</div>
+
+<h3>灭火器状态检查</h3>
+
+<p>
+检查灭火器外观、压力、部件和整体状态，确认是否存在需要维护的问题。
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">⚙️</div>
+
+<h3>部件检查与维护</h3>
+
+<p>
+检查喷管、阀门、安全销及相关部件，并根据实际状况提供适当处理。
+</p>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🧯</div>
+
+<h3>维护与充装</h3>
+
+<p>
+对于符合条件并需要服务的灭火器，可根据检查结果提供充装或其他维护服务。
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+WHEN MAINTENANCE IS NEEDED
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="two-column">
+
+
+<div class="info-card">
+
+<h2>哪些情况可能需要维护？</h2>
+
+<ul>
+<li>灭火器压力异常</li>
+<li>灭火器曾经使用过</li>
+<li>喷管或阀门出现问题</li>
+<li>安全销或封条损坏</li>
+<li>灭火器外壳有明显损坏</li>
+<li>检查时发现需要进一步服务</li>
+<li>设备长期未进行专业检查</li>
+</ul>
+
+</div>
+
+
+<div class="info-card">
+
+<h2>维护和年检有什么区别？</h2>
+
+<p>
+<strong>年度检查</strong>主要用于定期检查灭火器整体状态及相关标签记录。
+</p>
+
+<p>
+<strong>维护</strong>通常是在检查过程中发现设备存在问题，或者灭火器使用过、压力异常、部件需要进一步处理时进行。
+</p>
+
+<p>
+具体服务应根据灭火器实际类型和状态确定。
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CUSTOMERS
+========================= -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+<span>🏢</span> 我们服务的客户
+</h2>
+
+<p>
+纽约各类商业场所灭火器维护服务
+</p>
+
+</div>
+
+
+<div class="customer-grid">
+
+<div class="customer-card">
+<div class="customer-icon">🍴</div>
+<strong>餐厅</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🥡</div>
+<strong>外卖店</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">☕</div>
+<strong>奶茶店 / 咖啡店</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🏪</div>
+<strong>商铺</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🛒</div>
+<strong>超市 / 零售店</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">💻</div>
+<strong>办公室</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">📦</div>
+<strong>仓库</strong>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🏢</div>
+<strong>商业楼宇</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+AREAS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+<span>📍</span> 服务区域
+</h2>
+
+<p>
+灭火器维护服务覆盖纽约五大区
+</p>
+
+</div>
+
+
+<div class="area-list">
+
+<div class="area-item">
+<strong>曼哈顿</strong>
+<span>Manhattan</span>
+</div>
+
+<div class="area-item">
+<strong>法拉盛 / 皇后区</strong>
+<span>Flushing / Queens</span>
+</div>
+
+<div class="area-item">
+<strong>布鲁克林</strong>
+<span>Brooklyn</span>
+</div>
+
+<div class="area-item">
+<strong>布朗克斯</strong>
+<span>The Bronx</span>
+</div>
+
+<div class="area-item">
+<strong>史坦顿岛</strong>
+<span>Staten Island</span>
+</div>
+
+<div class="area-item">
+<strong>纽约五大区</strong>
+<span>New York City</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+RELATED
+========================= -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="related">
+
+<h2>相关文章与灭火器服务</h2>
+
+<ul>
+
+<li>
+<a href="/cn/纽约灭火器年检.html">
+纽约灭火器年检服务
+</a>
+</li>
+
+<li>
+<a href="/cn/纽约灭火器充装.html">
+纽约灭火器充装服务
+</a>
+</li>
+
+<li>
+<a href="/cn/flushing-fire-extinguisher-inspection.html">
+法拉盛灭火器检查服务
+</a>
+</li>
+
+<li>
+<a href="/cn/restaurant-fire-extinguisher-inspection-nyc.html">
+纽约餐厅灭火器检查要求
+</a>
+</li>
+
+<li>
+<a href="/cn/monthly-vs-yearly-inspection.html">
+灭火器每月检查和年度检查有什么区别？
+</a>
+</li>
+
+<li>
+<a href="/cn/blog.html">
+查看更多消防资讯
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+需要纽约灭火器维护服务？
+</h2>
+
+<p>
+检查 · 年检 · 维护 · 充装
+</p>
+
+
+<div class="hero-buttons"
+style="justify-content:center;">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=你好，我想咨询纽约灭火器维护服务"
+class="btn btn-green">
+短信预约
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+alt="NYC Fire Safety">
+
+<div>
+
+<strong style="color:white;">
+NYC FIRE SAFETY
+</strong>
+
+<br>
+
+<span style="font-size:12px;">
+纽约商业灭火器服务
+</span>
+
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="/cn/">首页</a>
+
+<a href="/cn/#services">服务项目</a>
+
+<a href="/cn/#areas">服务区域</a>
+
+<a href="/cn/blog.html">消防资讯</a>
+
+<a href="tel:16462016351">联系我们</a>
+
+<a href="/">English</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
