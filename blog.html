@@ -1,188 +1,1595 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>NYC Fire Safety Blog | FDNY Fire Extinguisher Tips & Updates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="NYC fire safety blog with FDNY fire extinguisher inspection tips, restaurant fire safety, maintenance guides, recharge information, and commercial fire extinguisher updates." />
+<title>NYC Fire Safety Blog | Fire Extinguisher Tips & Commercial Fire Protection</title>
+
+<meta name="description"
+content="NYC fire safety blog covering fire extinguisher inspections, maintenance, recharge, restaurant fire safety, fire suppression systems and commercial fire protection tips for New York City businesses.">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#10213b;
+    background:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+header{
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#10213b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.top-phone{
+    background:#e50914;
+    color:white !important;
+    padding:12px 20px;
+    border-radius:30px;
+    box-shadow:0 5px 16px rgba(229,9,20,.25);
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    border-radius:7px;
+    font-size:17px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:#fff;
+    box-shadow:0 6px 18px rgba(229,9,20,.25);
+}
+
+.btn-green{
+    background:#20b842;
+    color:#fff;
+    box-shadow:0 6px 18px rgba(32,184,66,.20);
+}
+
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    min-height:470px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.99) 0%,
+            rgba(255,255,255,.95) 42%,
+            rgba(255,255,255,.50) 68%,
+            rgba(255,255,255,.08) 100%
+        ),
+        url("nyc-fire-extinguisher-hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:720px;
+    padding:75px 0;
+}
+
+.hero-label{
+    display:inline-block;
+    background:#fff0f0;
+    color:#e50914;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+    padding:8px 13px;
+    border-radius:25px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.08;
+    letter-spacing:-1.4px;
+    margin:0 0 18px;
+}
+
+.red{
+    color:#e50914;
+}
+
+.hero-subtitle{
+    font-size:25px;
+    font-weight:700;
+    margin:0 0 10px;
+}
+
+.hero-description{
+    font-size:18px;
+    color:#4c586a;
+    max-width:650px;
+    margin-bottom:28px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+
+/* =========================
+TRUST BAR
+========================= */
+
+.trust-bar{
+    background:#10213b;
+    color:#fff;
+    padding:19px 0;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+}
+
+.trust-item{
+    padding:5px 15px;
+    border-right:1px solid rgba(255,255,255,.16);
+}
+
+.trust-item:last-child{
+    border-right:0;
+}
+
+.trust-item strong{
+    display:block;
+    font-size:16px;
+}
+
+.trust-item span{
+    color:#c8d1dc;
+    font-size:12px;
+}
+
+
+/* =========================
+SECTIONS
+========================= */
+
+section{
+    padding:75px 0;
+}
+
+.section-light{
+    background:#f6f8fb;
+}
+
+.section-title{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 42px;
+}
+
+.section-title h2{
+    font-size:36px;
+    margin:0 0 7px;
+}
+
+.section-title h2 span{
+    color:#e50914;
+}
+
+.section-title p{
+    color:#758092;
+    margin:0;
+    font-size:16px;
+}
+
+
+/* =========================
+WHO WE ARE
+========================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:55px;
+    align-items:center;
+}
+
+.about-content h2{
+    font-size:36px;
+    line-height:1.2;
+    margin:0 0 18px;
+}
+
+.about-content p{
+    color:#667286;
+}
+
+.about-box{
+    background:#10213b;
+    color:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(16,33,59,.16);
+}
+
+.about-box h3{
+    font-size:23px;
+    margin-top:0;
+}
+
+.about-list{
+    margin-top:22px;
+}
+
+.about-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:13px 0;
+}
+
+.about-check{
+    min-width:28px;
+    height:28px;
+    border-radius:50%;
+    background:#e50914;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+/* =========================
+BLOG GRID
+========================= */
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.blog-card{
+    background:#fff;
+    border-radius:14px;
+    padding:30px;
+    border:1px solid #edf0f4;
+    box-shadow:0 7px 25px rgba(16,33,59,.08);
+    transition:.25s;
+    display:flex;
+    flex-direction:column;
+}
+
+.blog-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(16,33,59,.13);
+}
+
+.blog-category{
+    display:inline-block;
+    align-self:flex-start;
+    background:#fff0f0;
+    color:#e50914;
+    font-size:12px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    padding:7px 11px;
+    border-radius:20px;
+    margin-bottom:15px;
+}
+
+.blog-icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.blog-card h2{
+    font-size:23px;
+    line-height:1.3;
+    margin:0 0 12px;
+}
+
+.blog-card h2 a{
+    color:#10213b;
+}
+
+.blog-card h2 a:hover{
+    color:#e50914;
+}
+
+.blog-card p{
+    color:#697588;
+    font-size:15px;
+    flex-grow:1;
+}
+
+.read-more{
+    color:#e50914;
+    font-weight:700;
+    margin-top:10px;
+}
+
+
+/* =========================
+TOPICS
+========================= */
+
+.topic-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.topic-card{
+    background:#fff;
+    border:1px solid #edf0f4;
+    border-radius:13px;
+    padding:27px 22px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(16,33,59,.06);
+}
+
+.topic-icon{
+    font-size:35px;
+    margin-bottom:9px;
+}
+
+.topic-card h3{
+    font-size:18px;
+    margin:0 0 7px;
+}
+
+.topic-card p{
+    color:#758092;
+    font-size:13px;
+    margin-bottom:13px;
+}
+
+.topic-card a{
+    color:#e50914;
+    font-size:14px;
+    font-weight:700;
+}
+
+
+/* =========================
+SERVICE AREAS
+========================= */
+
+.area-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:17px;
+}
+
+.area-card{
+    display:block;
+    background:#fff;
+    border-radius:11px;
+    overflow:hidden;
+    color:#10213b;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.area-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 27px rgba(0,0,0,.13);
+}
+
+.area-image{
+    height:135px;
+    background-size:cover;
+    background-position:center;
+    background-color:#dce3ec;
+}
+
+.area-info{
+    padding:14px;
+}
+
+.area-info strong{
+    display:block;
+    font-size:17px;
+}
+
+.area-info span{
+    color:#758092;
+    font-size:13px;
+}
+
+
+/* =========================
+QUICK LINKS
+========================= */
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.quick-card{
+    background:white;
+    padding:24px;
+    border-radius:12px;
+    border:1px solid #edf0f4;
+    box-shadow:0 5px 18px rgba(16,33,59,.06);
+}
+
+.quick-card h3{
+    margin:0 0 8px;
+    font-size:18px;
+}
+
+.quick-card p{
+    color:#758092;
+    font-size:14px;
+}
+
+.quick-card a{
+    color:#e50914;
+    font-weight:700;
+}
+
+
+/* =========================
+CTA
+========================= */
+
+.cta{
+    background:
+        linear-gradient(rgba(8,28,52,.78),rgba(8,28,52,.86)),
+        url("cn/nyc-skyline.jpg") center/cover no-repeat;
+
+    color:#fff;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.cta h2{
+    font-size:37px;
+    margin:0 0 7px;
+}
+
+.cta p{
+    margin:0 0 25px;
+    color:#dbe3ed;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#07192e;
+    color:#b8c2cf;
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.footer-brand img{
+    height:48px;
+    width:auto;
+}
+
+.footer-name{
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-subtitle{
+    font-size:12px;
+    margin-top:3px;
+}
+
+.footer-links a{
+    color:#b8c2cf;
+    margin-left:18px;
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:950px){
+
+    .nav{
+        padding:12px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+
+        background:
+            linear-gradient(
+                rgba(255,255,255,.92),
+                rgba(255,255,255,.92)
+            ),
+            url("nyc-fire-extinguisher-hero.jpg") center/cover;
+    }
+
+    .hero-content{
+        padding:65px 0;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .blog-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .topic-grid,
+    .quick-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .area-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-item{
+        border:0;
+        padding:12px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero-subtitle{
+        font-size:21px;
+    }
+
+    .blog-grid,
+    .topic-grid,
+    .quick-grid,
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+}
+
+</style>
+
 </head>
 
-<body style="font-family: Arial, sans-serif; margin:0; line-height:1.7; color:#222; background:#f7f7f7;">
 
-  <div style="background:#111; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
-    <div style="color:white; font-size:26px; font-weight:bold;">
-      🔥 Fire Safety
-    </div>
+<body>
 
-    <div>
-      <a href="index.html" style="color:white; margin:0 10px; text-decoration:none;">Home</a>
-      <a href="blog.html" style="color:white; margin:0 10px; text-decoration:none;">News</a>
-      <a href="fire-extinguisher-inspection-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Inspection</a>
-      <a href="fire-extinguisher-maintenance-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Maintenance</a>
-      <a href="fire-extinguisher-recharge-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Recharge</a>
-      <a href="fire-extinguisher-near-me-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Near Me</a>
-    </div>
-  </div>
 
-  <div style="background:#c40000; color:white; padding:55px 20px; text-align:center;">
-    <h1 style="font-size:40px; margin-bottom:10px;">NYC Fire Safety Blog</h1>
+<!-- =========================
+HEADER
+========================= -->
 
-    <p style="font-size:22px;">FDNY Tips • Fire Extinguisher Guides • Restaurant Fire Safety</p>
+<header>
 
-    <p>Helpful fire extinguisher information for NYC restaurants, offices, stores, warehouses, and commercial buildings.</p>
+<div class="container nav">
 
-    <div style="background:#ff4d00; color:white; padding:14px; margin:18px auto; font-size:22px; font-weight:bold; text-align:center; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.25); letter-spacing:1px; max-width:900px;">
-      🔥 NYC FIRE EXTINGUISHER INSPECTION & SAFETY BLOG 🔥
-    </div>
+<a href="/" class="logo">
 
-    <p>
-      <a href="tel:16462016351" style="background:white; color:#c40000; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block; margin:6px;">
-        Call 646-201-6351
-      </a>
+<img src="logo.png"
+alt="NYC Fire Safety">
 
-      <a href="https://wa.me/16462016351?text=Hi%20I%20need%20fire%20extinguisher%20service%20in%20NYC" style="background:#25D366; color:white; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block; margin:6px;">
-        WhatsApp Us
-      </a>
-    </p>
-  </div>
+</a>
 
-  <div style="max-width:1000px; margin:30px auto; padding:0 20px;">
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<nav class="nav-links">
 
-  <h2>WHO WE ARE</h2>
+<a href="/">Home</a>
 
-  <h3>Quality Fire Protection You Can Trust</h3>
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
 
-  <p>
-    At Fire Safety, we provide reliable, professional, and timely fire protection services throughout New York City and the surrounding areas. Whether you are opening a new business, managing multiple commercial locations, or simply need an inspection, our experienced team is ready to help.
-  </p>
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
 
-  <p>
-    No job is too large or too small. From restaurants and retail stores to offices, warehouses, healthcare facilities, and commercial buildings, we provide fire protection solutions tailored to your needs.
-  </p>
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
 
-  <p>
-    Our mission is simple: to provide fast, dependable service at competitive prices while maintaining high standards of professionalism and customer care.
-  </p>
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
 
-  <p>
-    Fire Safety proudly serves Manhattan, Brooklyn, Queens, Bronx, Staten Island, and surrounding NYC areas.
-  </p>
+<a href="/blog.html">
+News
+</a>
+
+<a href="tel:16462016351"
+class="top-phone">
+☎ 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher service in NYC."
+class="btn btn-green">
+Text for Service
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+HERO
+========================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-label">
+NYC FIRE SAFETY NEWS & GUIDES
+</div>
+
+<h1>
+NYC <span class="red">Fire Safety</span> Blog
+</h1>
+
+<p class="hero-subtitle">
+Fire Extinguisher Tips · Restaurant Fire Safety · Commercial Fire Protection
+</p>
+
+<p class="hero-description">
+Helpful fire safety information for New York City
+restaurants, offices, stores, warehouses,
+property managers and commercial buildings.
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher service in NYC."
+class="btn btn-green">
+Text for Service
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
-<section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
-  <h2>Latest Fire Safety News</h2>
-  <p>Read our latest FDNY tips, fire extinguisher inspection guides, restaurant fire safety updates, and NYC commercial fire protection news.</p>
-</section>
-    <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:18px; margin-bottom:25px;">
 
-      <div style="background:white; padding:24px; border-radius:10px; border:1px solid #ddd;">
-        <h2>
-          <a href="fdny-fire-extinguisher-inspection-restaurants-nyc.html" style="color:#c40000; text-decoration:none;">
-            FDNY Fire Extinguisher Inspection Tips for NYC Restaurants
-          </a>
-        </h2>
-        <p>
-          What restaurant owners should know about FDNY fire extinguisher inspections, tags, and common violations in NYC.
-        </p>
-        <a href="fdny-fire-extinguisher-inspection-restaurants-nyc.html">Read More</a>
-      </div>
 
-      <div style="background:white; padding:24px; border-radius:10px; border:1px solid #ddd;">
-        <h2>
-          <a href="how-often-fire-extinguisher-inspection-nyc.html" style="color:#c40000; text-decoration:none;">
-            How Often Should Fire Extinguishers Be Inspected in NYC?
-          </a>
-        </h2>
-        <p>
-          A simple guide for NYC restaurants, offices, stores, warehouses, and commercial buildings.
-        </p>
-        <a href="how-often-fire-extinguisher-inspection-nyc.html">Read More</a>
-      </div>
+<!-- =========================
+TRUST BAR
+========================= -->
 
-      <div style="background:white; padding:24px; border-radius:10px; border:1px solid #ddd;">
-        <h2>
-          <a href="fdny-fire-extinguisher-violations-nyc.html" style="color:#c40000; text-decoration:none;">
-            Common FDNY Fire Extinguisher Violations in NYC
-          </a>
-        </h2>
-        <p>
-          Learn common fire extinguisher issues that can lead to FDNY violations and how to avoid them.
-        </p>
-        <a href="fdny-fire-extinguisher-violations-nyc.html">Read More</a>
-      </div>
+<div class="trust-bar">
 
-<div style="background:white; padding:24px; border-radius:10px; border:1px solid #ddd;">
+<div class="container trust-grid">
+
+<div class="trust-item">
+<strong>Fire Extinguishers</strong>
+<span>Inspection & Service Guides</span>
+</div>
+
+<div class="trust-item">
+<strong>Restaurant Safety</strong>
+<span>Commercial Kitchen Information</span>
+</div>
+
+<div class="trust-item">
+<strong>NYC Businesses</strong>
+<span>Commercial Fire Protection</span>
+</div>
+
+<div class="trust-item">
+<strong>5 Boroughs</strong>
+<span>New York City Service</span>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- =========================
+WHO WE ARE
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="about-grid">
+
+
+<div class="about-content">
 
 <h2>
-<a href="monthly-vs-yearly-fire-extinguisher-inspections-nyc.html" style="color:#c40000; text-decoration:none;">
-Monthly vs Yearly Fire Extinguisher Inspections in NYC
-</a>
+Fire Protection You Can
+<span class="red">Count On</span>
 </h2>
 
 <p>
-Learn the difference between monthly visual inspections and annual professional fire extinguisher inspections in New York City.
+At NYC Fire Safety, we provide commercial fire
+extinguisher services throughout New York City.
+Whether you operate one restaurant, manage a retail
+store or oversee multiple commercial properties,
+our goal is to make fire extinguisher service
+straightforward and convenient.
 </p>
 
-<a href="monthly-vs-yearly-fire-extinguisher-inspections-nyc.html">
-Read More
+<p>
+We work with restaurants, offices, retail stores,
+warehouses, property managers and commercial
+buildings throughout Manhattan, Queens, Brooklyn,
+the Bronx and Staten Island.
+</p>
+
+<p>
+This blog provides practical information about
+fire extinguisher inspections, maintenance,
+recharge, restaurant fire safety and other
+commercial fire protection topics.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>
+NYC Commercial Fire Safety
+</h3>
+
+<div class="about-list">
+
+<div class="about-item">
+<span class="about-check">✓</span>
+Fire Extinguisher Inspection
+</div>
+
+<div class="about-item">
+<span class="about-check">✓</span>
+Fire Extinguisher Maintenance
+</div>
+
+<div class="about-item">
+<span class="about-check">✓</span>
+Recharge & Refill
+</div>
+
+<div class="about-item">
+<span class="about-check">✓</span>
+Restaurant Fire Safety
+</div>
+
+<div class="about-item">
+<span class="about-check">✓</span>
+Commercial Fire Suppression
+</div>
+
+<div class="about-item">
+<span class="about-check">✓</span>
+NYC Five Borough Service
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+LATEST ARTICLES
+========================= -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Latest <span>Fire Safety Articles</span>
+</h2>
+
+<p>
+Fire extinguisher and commercial fire safety information for NYC businesses
+</p>
+
+</div>
+
+
+<div class="blog-grid">
+
+
+<!-- ARTICLE 1 -->
+
+<article class="blog-card">
+
+<div class="blog-category">
+Restaurant Fire Safety
+</div>
+
+<div class="blog-icon">
+🍴
+</div>
+
+<h2>
+
+<a href="/fdny-fire-extinguisher-inspection-restaurants-nyc.html">
+
+FDNY Fire Extinguisher Inspection Tips for NYC Restaurants
+
+</a>
+
+</h2>
+
+<p>
+What restaurant owners should know about fire
+extinguisher inspections, service tags and common
+fire safety issues in New York City restaurants.
+</p>
+
+<a href="/fdny-fire-extinguisher-inspection-restaurants-nyc.html"
+class="read-more">
+
+Read Article →
+
+</a>
+
+</article>
+
+
+
+<!-- ARTICLE 2 -->
+
+<article class="blog-card">
+
+<div class="blog-category">
+Inspection Guide
+</div>
+
+<div class="blog-icon">
+📋
+</div>
+
+<h2>
+
+<a href="/how-often-fire-extinguisher-inspection-nyc.html">
+
+How Often Should Fire Extinguishers Be Inspected in NYC?
+
+</a>
+
+</h2>
+
+<p>
+A practical guide for restaurants, offices,
+stores, warehouses and commercial buildings
+that need to understand fire extinguisher inspections.
+</p>
+
+<a href="/how-often-fire-extinguisher-inspection-nyc.html"
+class="read-more">
+
+Read Article →
+
+</a>
+
+</article>
+
+
+
+<!-- ARTICLE 3 -->
+
+<article class="blog-card">
+
+<div class="blog-category">
+Fire Safety
+</div>
+
+<div class="blog-icon">
+⚠️
+</div>
+
+<h2>
+
+<a href="/fdny-fire-extinguisher-violations-nyc.html">
+
+Common FDNY Fire Extinguisher Violations in NYC
+
+</a>
+
+</h2>
+
+<p>
+Learn about common fire extinguisher problems
+business owners may encounter and why regular
+inspection and maintenance matter.
+</p>
+
+<a href="/fdny-fire-extinguisher-violations-nyc.html"
+class="read-more">
+
+Read Article →
+
+</a>
+
+</article>
+
+
+
+<!-- ARTICLE 4 -->
+
+<article class="blog-card">
+
+<div class="blog-category">
+Inspection Guide
+</div>
+
+<div class="blog-icon">
+🔍
+</div>
+
+<h2>
+
+<a href="/monthly-vs-yearly-fire-extinguisher-inspections-nyc.html">
+
+Monthly vs Yearly Fire Extinguisher Inspections in NYC
+
+</a>
+
+</h2>
+
+<p>
+Learn the difference between routine visual checks
+and annual professional fire extinguisher inspections
+for New York City businesses.
+</p>
+
+<a href="/monthly-vs-yearly-fire-extinguisher-inspections-nyc.html"
+class="read-more">
+
+Read Article →
+
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+FIRE SAFETY TOPICS
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Explore <span>Fire Safety Topics</span>
+</h2>
+
+<p>
+Find information based on the service your business needs
+</p>
+
+</div>
+
+
+<div class="topic-grid">
+
+
+<div class="topic-card">
+
+<div class="topic-icon">
+🔍
+</div>
+
+<h3>
+Inspection
+</h3>
+
+<p>
+Fire extinguisher inspection information for NYC businesses.
+</p>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Learn More →
 </a>
 
 </div>
 
 
 
+<div class="topic-card">
+
+<div class="topic-icon">
+🛠️
+</div>
+
+<h3>
+Maintenance
+</h3>
+
+<p>
+Commercial fire extinguisher maintenance and service information.
+</p>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Learn More →
+</a>
+
+</div>
 
 
 
+<div class="topic-card">
+
+<div class="topic-icon">
+🧯
+</div>
+
+<h3>
+Recharge
+</h3>
+
+<p>
+Fire extinguisher recharge and refill service information.
+</p>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Learn More →
+</a>
+
+</div>
 
 
-      
 
-    </section>
+<div class="topic-card">
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
-      <h2>Service Areas</h2>
-      <p>We provide fire extinguisher service in Manhattan, Brooklyn, Queens, Bronx, and Staten Island.</p>
+<div class="topic-icon">
+🔥
+</div>
 
-      <p>
-        <a href="fire-extinguisher-queens.html" style="margin-right:15px;">Queens</a>
-        <a href="fire-extinguisher-brooklyn.html" style="margin-right:15px;">Brooklyn</a>
-        <a href="fire-extinguisher-bronx.html" style="margin-right:15px;">Bronx</a>
-        <a href="fire-extinguisher-manhattan.html" style="margin-right:15px;">Manhattan</a>
-      </p>
-    </section>
+<h3>
+Fire Suppression
+</h3>
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
-      <h2>Fire Extinguisher Services</h2>
+<p>
+Commercial kitchen and restaurant fire suppression information.
+</p>
 
-      <p>
-        <a href="fire-extinguisher-inspection-nyc.html" style="margin-right:15px;">Inspection NYC</a>
-        <a href="fire-extinguisher-maintenance-nyc.html" style="margin-right:15px;">Maintenance NYC</a>
-        <a href="fire-extinguisher-recharge-nyc.html" style="margin-right:15px;">Recharge NYC</a>
-        <a href="fire-extinguisher-near-me-nyc.html" style="margin-right:15px;">Near Me Service</a>
-      </p>
-    </section>
+<a href="/fire-suppression-system-nyc.html">
+Learn More →
+</a>
 
-    <section style="background:#111; color:white; padding:30px; border-radius:10px; text-align:center;">
-      <h2>Need Fire Extinguisher Service in NYC?</h2>
-      <p>Call today for inspection, maintenance, recharge, or same day service.</p>
+</div>
 
-      <p>
-        <a href="tel:16462016351" style="background:#c40000; color:white; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block;">
-          Call 646-201-6351
-        </a>
-      </p>
-    </section>
 
-  </div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+SERVICE AREAS
+========================= -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Fire Safety Information
+<span>Across NYC</span>
+</h2>
+
+<p>
+Serving businesses throughout New York City's five boroughs
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+
+<a href="/fire-extinguisher-manhattan.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/manhattan.jpg');">
+</div>
+
+<div class="area-info">
+
+<strong>
+Manhattan
+</strong>
+
+<span>
+Fire Extinguisher Service
+</span>
+
+</div>
+
+</a>
+
+
+
+<a href="/fire-extinguisher-queens.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/flushing.jpg');">
+</div>
+
+<div class="area-info">
+
+<strong>
+Queens
+</strong>
+
+<span>
+Fire Extinguisher Service
+</span>
+
+</div>
+
+</a>
+
+
+
+<a href="/fire-extinguisher-brooklyn.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/brooklyn.jpg');">
+</div>
+
+<div class="area-info">
+
+<strong>
+Brooklyn
+</strong>
+
+<span>
+Commercial Fire Extinguisher Service
+</span>
+
+</div>
+
+</a>
+
+
+
+<a href="/fire-extinguisher-bronx.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/bronx.jpeg');">
+</div>
+
+<div class="area-info">
+
+<strong>
+Bronx
+</strong>
+
+<span>
+Commercial Fire Extinguisher Service
+</span>
+
+</div>
+
+</a>
+
+
+
+<a href="/fire-extinguisher-near-me-nyc.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/staten-island.jpg');">
+</div>
+
+<div class="area-info">
+
+<strong>
+Staten Island
+</strong>
+
+<span>
+Fire Extinguisher Service
+</span>
+
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+QUICK SERVICES
+========================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Need <span>Fire Protection Service?</span>
+</h2>
+
+<p>
+Explore our NYC commercial fire protection services
+</p>
+
+</div>
+
+
+<div class="quick-grid">
+
+
+<div class="quick-card">
+
+<h3>
+Fire Extinguisher Inspection
+</h3>
+
+<p>
+Commercial fire extinguisher inspection service throughout NYC.
+</p>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection Service →
+</a>
+
+</div>
+
+
+<div class="quick-card">
+
+<h3>
+Fire Extinguisher Maintenance
+</h3>
+
+<p>
+Maintenance service based on extinguisher condition and service needs.
+</p>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance Service →
+</a>
+
+</div>
+
+
+<div class="quick-card">
+
+<h3>
+Recharge & Refill
+</h3>
+
+<p>
+Recharge service for qualifying commercial fire extinguishers.
+</p>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge Service →
+</a>
+
+</div>
+
+
+<div class="quick-card">
+
+<h3>
+Fire Suppression Systems
+</h3>
+
+<p>
+Commercial kitchen fire suppression system information and service.
+</p>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Need Fire Extinguisher Service in NYC?
+</h2>
+
+<p>
+Inspection · Maintenance · Recharge · Commercial Fire Protection
+</p>
+
+
+<div class="hero-buttons"
+style="justify-content:center;">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+
+☎ Call 646-201-6351
+
+</a>
+
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher service in NYC."
+class="btn btn-green">
+
+Text for Service
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer-content">
+
+
+<div class="footer-brand">
+
+<img src="logo.png"
+alt="NYC Fire Safety">
+
+<div>
+
+<div class="footer-name">
+NYC FIRE SAFETY
+</div>
+
+<div class="footer-subtitle">
+Commercial Fire Extinguisher Service
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="/">
+Home
+</a>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
+
+<a href="/blog.html">
+News
+</a>
+
+<a href="tel:16462016351">
+Contact
+</a>
+
+</div>
+
+
+</div>
+
+</footer>
+
 
 </body>
 </html>
-
-
-
