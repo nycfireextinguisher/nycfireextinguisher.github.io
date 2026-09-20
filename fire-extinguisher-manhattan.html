@@ -1,205 +1,1502 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fire Extinguisher Service Manhattan NY | Inspection, Maintenance & Recharge</title>
 
-  <title>Fire Extinguisher Service Manhattan NY | Inspection, Recharge & Maintenance</title>
+<meta name="description"
+content="Fire extinguisher service in Manhattan, NY for restaurants, offices, retail stores, commercial buildings and property managers. Inspection, maintenance and recharge service. Call 646-201-6351.">
 
-  <meta name="description" content="Fire extinguisher service in Manhattan NY. We provide inspection, maintenance, and recharge for restaurants, offices, stores, warehouses, and commercial buildings. Call 646-201-6351." />
+<style>
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#10213b;
+    background:#fff;
+    line-height:1.65;
+}
+
+a{text-decoration:none;}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+
+/* HEADER */
+
+header{
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#10213b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.top-phone{
+    background:#e50914;
+    color:white !important;
+    padding:12px 20px;
+    border-radius:30px;
+    box-shadow:0 5px 16px rgba(229,9,20,.25);
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    border-radius:7px;
+    font-size:17px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:white;
+    box-shadow:0 6px 18px rgba(229,9,20,.25);
+}
+
+.btn-green{
+    background:#20b842;
+    color:white;
+    box-shadow:0 6px 18px rgba(32,184,66,.20);
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.99) 0%,
+            rgba(255,255,255,.95) 43%,
+            rgba(255,255,255,.52) 70%,
+            rgba(255,255,255,.10) 100%
+        ),
+        url("cn/manhattan.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:740px;
+    padding:80px 0;
+}
+
+.hero-label{
+    display:inline-block;
+    background:#fff0f0;
+    color:#e50914;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+    padding:8px 13px;
+    border-radius:25px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.08;
+    letter-spacing:-1.4px;
+    margin:0 0 18px;
+}
+
+.red{
+    color:#e50914;
+}
+
+.hero-subtitle{
+    font-size:25px;
+    font-weight:700;
+    margin:0 0 10px;
+}
+
+.hero-description{
+    font-size:18px;
+    color:#4c586a;
+    max-width:660px;
+    margin-bottom:28px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+
+/* TRUST BAR */
+
+.trust-bar{
+    background:#10213b;
+    color:white;
+    padding:19px 0;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+}
+
+.trust-item{
+    padding:5px 15px;
+    border-right:1px solid rgba(255,255,255,.16);
+}
+
+.trust-item:last-child{
+    border-right:0;
+}
+
+.trust-item strong{
+    display:block;
+    font-size:16px;
+}
+
+.trust-item span{
+    color:#c8d1dc;
+    font-size:12px;
+}
+
+
+/* GENERAL */
+
+section{
+    padding:75px 0;
+}
+
+.section-light{
+    background:#f6f8fb;
+}
+
+.section-title{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 42px;
+}
+
+.section-title h2{
+    font-size:36px;
+    line-height:1.2;
+    margin:0 0 8px;
+}
+
+.section-title h2 span{
+    color:#e50914;
+}
+
+.section-title p{
+    color:#758092;
+    margin:0;
+}
+
+
+/* INTRO */
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:55px;
+    align-items:center;
+}
+
+.intro-content h2{
+    font-size:36px;
+    line-height:1.2;
+    margin:0 0 18px;
+}
+
+.intro-content p{
+    color:#667286;
+}
+
+.intro-box{
+    background:#10213b;
+    color:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(16,33,59,.16);
+}
+
+.intro-box h3{
+    margin:0 0 20px;
+    font-size:23px;
+}
+
+.intro-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:14px 0;
+}
+
+.check{
+    min-width:28px;
+    height:28px;
+    background:#e50914;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+/* SERVICES */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service-card{
+    background:white;
+    border-radius:13px;
+    padding:28px 23px;
+    border:1px solid #edf0f4;
+    box-shadow:0 7px 25px rgba(16,33,59,.07);
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(16,33,59,.12);
+}
+
+.service-icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.service-card h3{
+    font-size:19px;
+    margin:0 0 8px;
+}
+
+.service-card p{
+    color:#697588;
+    font-size:14px;
+    min-height:90px;
+}
+
+.service-card a{
+    color:#e50914;
+    font-weight:700;
+}
+
+
+/* NEIGHBORHOODS */
+
+.neighborhood-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+
+.neighborhood{
+    background:white;
+    border:1px solid #e9edf2;
+    border-radius:11px;
+    padding:20px;
+    text-align:center;
+    font-weight:700;
+    box-shadow:0 4px 15px rgba(16,33,59,.04);
+}
+
+.neighborhood span{
+    display:block;
+    color:#758092;
+    font-weight:400;
+    font-size:12px;
+    margin-top:4px;
+}
+
+
+/* LOCAL CONTENT */
+
+.local-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.local-content h2{
+    font-size:32px;
+    line-height:1.25;
+    margin:0 0 18px;
+}
+
+.local-content h3{
+    font-size:21px;
+    margin:30px 0 7px;
+}
+
+.local-content p{
+    color:#627084;
+}
+
+.highlight{
+    background:#10213b;
+    color:white;
+    border-radius:14px;
+    padding:30px;
+    margin:30px 0;
+}
+
+.highlight strong{
+    font-size:20px;
+}
+
+.highlight p{
+    color:#d6dfe9;
+    margin:8px 0 0;
+}
+
+
+/* BUSINESS */
+
+.business-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:18px;
+    text-align:center;
+}
+
+.business-card{
+    background:white;
+    border:1px solid #edf0f4;
+    border-radius:12px;
+    padding:23px 10px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.business-icon{
+    font-size:31px;
+    margin-bottom:7px;
+}
+
+
+/* OTHER BOROUGHS */
+
+.area-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.area-card{
+    display:block;
+    background:white;
+    color:#10213b;
+    border-radius:11px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.area-card:hover{
+    transform:translateY(-4px);
+}
+
+.area-image{
+    height:145px;
+    background-size:cover;
+    background-position:center;
+    background-color:#dce3ec;
+}
+
+.area-info{
+    padding:15px;
+}
+
+.area-info strong{
+    display:block;
+    font-size:17px;
+}
+
+.area-info span{
+    color:#758092;
+    font-size:13px;
+}
+
+
+/* FAQ */
+
+.faq{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:white;
+    border:1px solid #e9edf2;
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:15px;
+}
+
+.faq-item h3{
+    margin:0 0 8px;
+    font-size:19px;
+}
+
+.faq-item p{
+    margin:0;
+    color:#657185;
+}
+
+
+/* CTA */
+
+.cta{
+    background:
+        linear-gradient(rgba(8,28,52,.78),rgba(8,28,52,.86)),
+        url("nyc-skyline.jpg") center/cover no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.cta h2{
+    font-size:37px;
+    margin:0 0 7px;
+}
+
+.cta p{
+    margin:0 0 25px;
+    color:#dbe3ed;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#07192e;
+    color:#b8c2cf;
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.footer-brand img{
+    height:48px;
+    width:auto;
+}
+
+.footer-name{
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-subtitle{
+    font-size:12px;
+    margin-top:3px;
+}
+
+.footer-links a{
+    color:#b8c2cf;
+    margin-left:18px;
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:white;
+}
+
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+    .nav{
+        padding:12px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+
+        background:
+            linear-gradient(
+                rgba(255,255,255,.92),
+                rgba(255,255,255,.92)
+            ),
+            url("cn/manhattan.jpg") center/cover;
+    }
+
+    .hero-content{
+        padding:65px 0;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .intro-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .neighborhood-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .business-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .area-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-item{
+        border:0;
+        padding:12px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero-subtitle{
+        font-size:21px;
+    }
+
+    .service-grid,
+    .neighborhood-grid,
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+
+    .business-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+}
+
+</style>
 
 </head>
 
-<body style="font-family: Arial, sans-serif; margin:0; line-height:1.7; color:#222; background:#f7f7f7;">
 
-  <div style="background:#111; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+<body>
 
-    <div style="color:white; font-size:26px; font-weight:bold;">
-      🔥 Fire Safety
-    </div>
 
-    <div>
+<!-- HEADER -->
 
-      <a href="index.html" style="color:white; margin:0 10px; text-decoration:none;">Home</a>
+<header>
 
-      <a href="fire-extinguisher-inspection-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Inspection</a>
+<div class="container nav">
 
-      <a href="fire-extinguisher-maintenance-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Maintenance</a>
+<a href="/" class="logo">
+<img src="logo.png" alt="NYC Fire Safety">
+</a>
 
-      <a href="fire-extinguisher-recharge-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Recharge</a>
+<nav class="nav-links">
 
-      <a href="fire-extinguisher-near-me-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Near Me</a>
+<a href="/">Home</a>
 
-    </div>
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
 
-  </div>
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
 
-  <div style="background:#c40000; color:white; padding:55px 20px; text-align:center;">
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
 
-    <h1 style="font-size:36px; margin-bottom:10px;">
-      Fire Extinguisher Service in Manhattan, NY
-    </h1>
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
 
-    <p style="font-size:20px;">
-      Inspection • Maintenance • Recharge • Same Day Service
-    </p>
+<a href="/blog.html">
+News
+</a>
 
-    <p>
-      Serving Restaurants, Offices, Stores, Warehouses & Commercial Buildings in Manhattan
-    </p>
+<a href="tel:16462016351"
+class="top-phone">
+☎ 646-201-6351
+</a>
 
-    <div style="background:#ff4d00; color:white; padding:14px; margin:18px auto; font-size:22px; font-weight:bold; text-align:center; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.25); letter-spacing:1px; max-width:900px;">
+<a href="sms:6462016351?body=Hi, I need fire extinguisher service in Manhattan."
+class="btn btn-green">
+Text for Service
+</a>
 
-      🔥 OVER 1000+ FIRE EXTINGUISHERS INSPECTED & SERVICED EVERY WEEK IN NYC 🔥
+</nav>
 
-    </div>
+</div>
 
-    <p>
+</header>
 
-      <a href="tel:16462016351"
-      style="background:white; color:#c40000; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block; margin:6px;">
 
-      Call 646-201-6351
+<!-- HERO -->
 
-      </a>
+<section class="hero">
 
-      <a href="https://wa.me/16462016351?text=Hi%20I%20need%20fire%20extinguisher%20service%20in%20Manhattan%20NY"
+<div class="container">
 
-      style="background:#25D366; color:white; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block; margin:6px;">
+<div class="hero-content">
 
-      WhatsApp Us
+<div class="hero-label">
+MANHATTAN COMMERCIAL FIRE PROTECTION
+</div>
 
-      </a>
+<h1>
+Fire Extinguisher
+<span class="red">Service in Manhattan, NY</span>
+</h1>
 
-    </p>
+<p class="hero-subtitle">
+Inspection · Maintenance · Recharge
+</p>
 
-  </div>
+<p class="hero-description">
+Commercial fire extinguisher service for Manhattan
+restaurants, offices, retail stores, commercial buildings,
+property managers and other businesses.
+</p>
 
-  <div style="max-width:1000px; margin:30px auto; padding:0 20px;">
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<div class="hero-buttons">
 
-      <h2>Manhattan Fire Extinguisher Service</h2>
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
+</a>
 
-      <p>
-        Looking for fire extinguisher service in Manhattan NY? We provide FDNY compliant
-        <strong>fire extinguisher inspection, maintenance, and recharge services</strong>
-        for restaurants, offices, stores, warehouses, and commercial buildings.
-      </p>
+<a href="sms:6462016351?body=Hi, I need fire extinguisher service in Manhattan."
+class="btn btn-green">
+Text for Service
+</a>
 
-      <p>
-        <strong>Same day fire extinguisher inspection service available in Manhattan and NYC.</strong>
-      </p>
+</div>
 
-    </section>
+</div>
 
-    <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; margin-bottom:25px;">
+</div>
 
-      <div style="background:white; padding:22px; border-radius:10px; border:1px solid #ddd;">
+</section>
 
-        <h2>Inspection</h2>
 
-        <p>Fire extinguisher inspection Manhattan NY for commercial businesses.</p>
+<!-- TRUST BAR -->
 
-        <a href="fire-extinguisher-inspection-nyc.html">Learn More</a>
+<div class="trust-bar">
 
-      </div>
+<div class="container trust-grid">
 
-      <div style="background:white; padding:22px; border-radius:10px; border:1px solid #ddd;">
+<div class="trust-item">
+<strong>Manhattan Service</strong>
+<span>Commercial Customers</span>
+</div>
 
-        <h2>Maintenance</h2>
+<div class="trust-item">
+<strong>Inspection</strong>
+<span>Fire Extinguisher Service</span>
+</div>
 
-        <p>Professional fire extinguisher maintenance in Manhattan.</p>
+<div class="trust-item">
+<strong>Maintenance</strong>
+<span>Commercial Equipment</span>
+</div>
 
-        <a href="fire-extinguisher-maintenance-nyc.html">Learn More</a>
+<div class="trust-item">
+<strong>Recharge</strong>
+<span>Based on Unit Condition</span>
+</div>
 
-      </div>
+</div>
 
-      <div style="background:white; padding:22px; border-radius:10px; border:1px solid #ddd;">
+</div>
 
-        <h2>Recharge</h2>
 
-        <p>Fire extinguisher recharge and refill service in Manhattan NY.</p>
+<!-- INTRO -->
 
-        <a href="fire-extinguisher-recharge-nyc.html">Learn More</a>
+<section>
 
-      </div>
+<div class="container">
 
-    </section>
+<div class="intro-grid">
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<div class="intro-content">
 
-      <h2>Service Areas in Manhattan</h2>
+<h2>
+Commercial Fire Extinguisher Service
+<span class="red">Throughout Manhattan</span>
+</h2>
 
-      <p>
-        Midtown, Downtown Manhattan, Upper East Side, Upper West Side,
-        Harlem, Financial District, and surrounding areas.
-      </p>
+<p>
+NYC Fire Safety provides commercial fire extinguisher
+service throughout Manhattan for restaurants, offices,
+retail stores, commercial buildings, property managers
+and other businesses.
+</p>
 
-    </section>
+<p>
+Services include fire extinguisher inspection,
+maintenance and recharge based on the type,
+condition and service needs of the equipment.
+</p>
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<p>
+Whether you operate a restaurant in Chinatown,
+manage an office in Midtown, run a retail store in SoHo,
+or manage commercial property in the Financial District,
+contact us to discuss your fire extinguisher service needs.
+</p>
 
-      <h2>Other NYC Service Areas</h2>
+</div>
 
-      <p>
 
-        <a href="fire-extinguisher-brooklyn.html" style="margin-right:15px;">Brooklyn</a>
+<div class="intro-box">
 
-        <a href="fire-extinguisher-bronx.html" style="margin-right:15px;">Bronx</a>
+<h3>
+Manhattan Fire Extinguisher Services
+</h3>
 
-        <a href="fire-extinguisher-queens.html" style="margin-right:15px;">Queens</a>
+<div class="intro-item">
+<span class="check">✓</span>
+Commercial Fire Extinguisher Inspection
+</div>
 
-        <a href="index.html" style="margin-right:15px;">NYC Home</a>
+<div class="intro-item">
+<span class="check">✓</span>
+Fire Extinguisher Maintenance
+</div>
 
-      </p>
+<div class="intro-item">
+<span class="check">✓</span>
+Recharge & Refill Service
+</div>
 
-    </section>
+<div class="intro-item">
+<span class="check">✓</span>
+Restaurant Fire Protection
+</div>
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<div class="intro-item">
+<span class="check">✓</span>
+Office & Commercial Building Service
+</div>
 
-      <h2>Why Choose Us</h2>
+<div class="intro-item">
+<span class="check">✓</span>
+Manhattan & NYC Five Boroughs
+</div>
 
-      <ul>
+</div>
 
-        <li>Fast response in Manhattan</li>
+</div>
 
-        <li>FDNY compliant service</li>
+</div>
 
-        <li>Experienced technician</li>
+</section>
 
-        <li>Same day service available</li>
 
-        <li>Serving all NYC boroughs</li>
+<!-- SERVICES -->
 
-      </ul>
+<section class="section-light">
 
-    </section>
+<div class="container">
 
-    <section style="background:#111; color:white; padding:30px; border-radius:10px; text-align:center;">
+<div class="section-title">
 
-      <h2>Need Fire Extinguisher Service in Manhattan?</h2>
+<h2>
+Fire Extinguisher Services
+<span>in Manhattan</span>
+</h2>
 
-      <p>
-        Call today for inspection, maintenance, recharge, or same day service.
-      </p>
+<p>
+Commercial fire protection services for Manhattan businesses
+</p>
 
-      <p>
+</div>
 
-        <a href="tel:16462016351"
 
-        style="background:#c40000; color:white; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block;">
+<div class="service-grid">
 
-        Call 646-201-6351
 
-        </a>
+<div class="service-card">
 
-      </p>
+<div class="service-icon">🔍</div>
 
-    </section>
+<h3>Inspection</h3>
 
-  </div>
+<p>
+Fire extinguisher inspection service for Manhattan
+restaurants, offices, stores and commercial properties.
+</p>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🛠️</div>
+
+<h3>Maintenance</h3>
+
+<p>
+Commercial fire extinguisher maintenance based
+on equipment condition and individual service needs.
+</p>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🧯</div>
+
+<h3>Recharge & Refill</h3>
+
+<p>
+Recharge service for qualifying extinguishers
+after evaluation of the unit and its condition.
+</p>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🔥</div>
+
+<h3>Fire Suppression</h3>
+
+<p>
+Commercial kitchen fire suppression system service
+for restaurants and food-service businesses.
+</p>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MANHATTAN SERVICE AREAS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Manhattan <span>Service Areas</span>
+</h2>
+
+<p>
+Commercial fire extinguisher service throughout Manhattan
+</p>
+
+</div>
+
+
+<div class="neighborhood-grid">
+
+<div class="neighborhood">
+Midtown Manhattan
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Financial District
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+SoHo
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Chinatown
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Lower East Side
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Chelsea
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Greenwich Village
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+East Village
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Upper East Side
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Upper West Side
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Harlem
+<span>Manhattan, NY</span>
+</div>
+
+<div class="neighborhood">
+Washington Heights
+<span>Manhattan, NY</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- LOCAL CONTENT -->
+
+<section class="section-light">
+
+<div class="container local-content">
+
+<h2>
+Fire Extinguisher Service for
+<span class="red">Manhattan Businesses</span>
+</h2>
+
+<p>
+Manhattan contains a wide variety of commercial properties,
+including restaurants, office buildings, retail stores,
+hotels and mixed-use commercial properties. Fire extinguisher
+service needs can vary depending on the type of business,
+the property and the equipment in use.
+</p>
+
+
+<h3>
+Manhattan Restaurants & Commercial Kitchens
+</h3>
+
+<p>
+Restaurants and food-service businesses should keep
+portable fire extinguishers visible and accessible.
+Commercial kitchens may also use separate fire suppression
+equipment designed for cooking-related fire hazards.
+</p>
+
+
+<h3>
+Midtown Offices & Commercial Buildings
+</h3>
+
+<p>
+Office buildings and commercial properties may contain
+multiple floors, tenants and fire extinguishers.
+Property managers and commercial customers with multiple
+units can contact us to discuss their service needs.
+</p>
+
+
+<h3>
+Retail Stores & Street-Level Businesses
+</h3>
+
+<p>
+Retail stores in areas such as SoHo, Midtown, Chinatown
+and the Upper East Side should avoid blocking portable
+fire extinguishers with displays, merchandise, boxes
+or other equipment.
+</p>
+
+
+<div class="highlight">
+
+<strong>
+Managing multiple extinguishers or commercial locations?
+</strong>
+
+<p>
+Property managers and businesses with several fire
+extinguishers can contact us to discuss the number
+of units, locations and service needs.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BUSINESS TYPES -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Manhattan Businesses
+<span>We Serve</span>
+</h2>
+
+<p>
+Commercial fire extinguisher service for many types of customers
+</p>
+
+</div>
+
+
+<div class="business-grid">
+
+<div class="business-card">
+<div class="business-icon">🍴</div>
+Restaurants
+</div>
+
+<div class="business-card">
+<div class="business-icon">💻</div>
+Offices
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏪</div>
+Retail Stores
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏨</div>
+Hotels
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏢</div>
+Commercial Buildings
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏠</div>
+Property Managers
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OTHER NYC SERVICE AREAS -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Other NYC
+<span>Service Areas</span>
+</h2>
+
+<p>
+Commercial fire extinguisher service throughout New York City
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+
+<a href="/fire-extinguisher-queens.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/flushing.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Queens</strong>
+<span>Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-brooklyn.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/brooklyn.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Brooklyn</strong>
+<span>Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-bronx.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/bronx.jpeg');">
+</div>
+
+<div class="area-info">
+<strong>Bronx</strong>
+<span>Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-near-me-nyc.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/staten-island.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Staten Island</strong>
+<span>Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+<div class="container faq">
+
+<div class="section-title">
+
+<h2>
+Manhattan Fire Extinguisher
+<span>FAQ</span>
+</h2>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you provide fire extinguisher service throughout Manhattan?
+</h3>
+
+<p>
+Yes. We provide commercial fire extinguisher service
+for customers throughout Manhattan and the other
+New York City boroughs.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you service Manhattan restaurants?
+</h3>
+
+<p>
+Yes. Restaurants and food-service businesses are
+among the types of commercial customers we serve.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you service Manhattan office buildings?
+</h3>
+
+<p>
+Yes. We provide commercial fire extinguisher service
+for offices and commercial buildings. Customers with
+multiple extinguishers can contact us to discuss
+their equipment and service needs.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you provide fire extinguisher recharge in Manhattan?
+</h3>
+
+<p>
+Recharge service may be available depending on the
+type and condition of the extinguisher. The unit
+should be evaluated before determining the appropriate service.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Can property managers schedule service for multiple locations?
+</h3>
+
+<p>
+Property managers and businesses with multiple commercial
+locations can contact us with the approximate number of
+properties and extinguishers to discuss service and scheduling.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Need Fire Extinguisher Service in Manhattan?
+</h2>
+
+<p>
+Inspection · Maintenance · Recharge · Commercial Fire Protection
+</p>
+
+<div class="hero-buttons"
+style="justify-content:center;">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher service in Manhattan."
+class="btn btn-green">
+Text for Service
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+alt="NYC Fire Safety">
+
+<div>
+
+<div class="footer-name">
+NYC FIRE SAFETY
+</div>
+
+<div class="footer-subtitle">
+Commercial Fire Extinguisher Service
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="/">Home</a>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
+
+<a href="/blog.html">
+News
+</a>
+
+<a href="tel:16462016351">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
 
 </body>
 </html>
