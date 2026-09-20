@@ -1,181 +1,1794 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Monthly vs Yearly Fire Extinguisher Inspections in NYC</title>
+<title>Monthly vs Annual Fire Extinguisher Inspections NYC | What's the Difference?</title>
 
-<meta name="description" content="Learn the differences between monthly and yearly fire extinguisher inspections in NYC and why both are important for fire safety and compliance.">
+<meta name="description"
+content="Learn the difference between monthly fire extinguisher inspections and annual fire extinguisher service in NYC, including quick checks, W-96 servicing and PFE tags.">
+
+<style>
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#10213b;
+    background:#fff;
+    line-height:1.7;
+}
+
+a{text-decoration:none;}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+
+/* HEADER */
+
+header{
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#10213b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.top-phone{
+    background:#e50914;
+    color:#fff !important;
+    padding:12px 20px;
+    border-radius:30px;
+    box-shadow:0 5px 16px rgba(229,9,20,.25);
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    border-radius:7px;
+    font-size:17px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:#fff;
+}
+
+.btn-green{
+    background:#20b842;
+    color:#fff;
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:500px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.99) 0%,
+            rgba(255,255,255,.95) 43%,
+            rgba(255,255,255,.55) 70%,
+            rgba(255,255,255,.12) 100%
+        ),
+        url("nyc-fire-extinguisher-hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:790px;
+    padding:75px 0;
+}
+
+.hero-label{
+    display:inline-block;
+    background:#fff0f0;
+    color:#e50914;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.7px;
+    padding:8px 13px;
+    border-radius:25px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:49px;
+    line-height:1.1;
+    letter-spacing:-1.2px;
+    margin:0 0 18px;
+}
+
+.red{
+    color:#e50914;
+}
+
+.hero-subtitle{
+    font-size:23px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.hero-description{
+    color:#4c586a;
+    font-size:18px;
+    max-width:680px;
+    margin-bottom:27px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+
+/* QUICK COMPARISON */
+
+.quick-bar{
+    background:#10213b;
+    color:#fff;
+    padding:28px 0;
+}
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.quick-item{
+    text-align:center;
+    padding:8px 30px;
+}
+
+.quick-item:first-child{
+    border-right:1px solid rgba(255,255,255,.18);
+}
+
+.quick-number{
+    color:#fff;
+    font-size:31px;
+    font-weight:800;
+}
+
+.quick-item strong{
+    display:block;
+    font-size:18px;
+}
+
+.quick-item span{
+    color:#c8d2df;
+    font-size:13px;
+}
+
+
+/* GENERAL */
+
+section{
+    padding:70px 0;
+}
+
+.section-light{
+    background:#f6f8fb;
+}
+
+.section-title{
+    text-align:center;
+    max-width:820px;
+    margin:0 auto 40px;
+}
+
+.section-title h2{
+    font-size:35px;
+    line-height:1.2;
+    margin:0 0 10px;
+}
+
+.section-title h2 span{
+    color:#e50914;
+}
+
+.section-title p{
+    color:#758092;
+    margin:0;
+}
+
+
+/* ARTICLE */
+
+.article{
+    max-width:900px;
+    margin:auto;
+}
+
+.article h2{
+    font-size:32px;
+    line-height:1.25;
+    margin:0 0 18px;
+}
+
+.article h3{
+    font-size:22px;
+    margin:30px 0 8px;
+}
+
+.article p{
+    color:#5f6c80;
+}
+
+.answer-box{
+    background:#fff4f4;
+    border-left:5px solid #e50914;
+    padding:24px 27px;
+    margin:25px 0;
+    border-radius:0 10px 10px 0;
+}
+
+.answer-box strong{
+    display:block;
+    color:#10213b;
+    font-size:21px;
+    margin-bottom:7px;
+}
+
+.answer-box p{
+    margin:0;
+}
+
+
+/* COMPARISON */
+
+.comparison{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.compare-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #e7ebf0;
+    box-shadow:0 8px 28px rgba(16,33,59,.07);
+}
+
+.compare-head{
+    padding:27px;
+    text-align:center;
+    color:#fff;
+}
+
+.monthly-head{
+    background:#10213b;
+}
+
+.annual-head{
+    background:#e50914;
+}
+
+.compare-head span{
+    display:block;
+    font-size:13px;
+    opacity:.8;
+    margin-bottom:4px;
+}
+
+.compare-head strong{
+    display:block;
+    font-size:25px;
+}
+
+.compare-body{
+    padding:27px;
+}
+
+.compare-row{
+    padding:15px 0;
+    border-bottom:1px solid #edf0f3;
+}
+
+.compare-row:last-child{
+    border-bottom:0;
+}
+
+.compare-row small{
+    display:block;
+    color:#8993a2;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+    margin-bottom:3px;
+}
+
+.compare-row strong{
+    display:block;
+    font-size:16px;
+}
+
+.compare-row p{
+    margin:4px 0 0;
+    color:#657185;
+    font-size:14px;
+}
+
+
+/* CHECKLIST */
+
+.check-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:17px;
+    max-width:950px;
+    margin:auto;
+}
+
+.check-card{
+    background:#fff;
+    border:1px solid #e9edf2;
+    border-radius:11px;
+    padding:21px;
+    display:flex;
+    gap:14px;
+}
+
+.check-icon{
+    min-width:34px;
+    height:34px;
+    border-radius:50%;
+    background:#e50914;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.check-card h3{
+    margin:0 0 4px;
+    font-size:17px;
+}
+
+.check-card p{
+    margin:0;
+    color:#697588;
+    font-size:14px;
+}
+
+
+/* IMPORTANT */
+
+.important{
+    max-width:900px;
+    margin:35px auto 0;
+    background:#10213b;
+    color:#fff;
+    border-radius:14px;
+    padding:30px;
+}
+
+.important h3{
+    margin:0 0 8px;
+    font-size:22px;
+}
+
+.important p{
+    color:#d5dee9;
+    margin:0;
+}
+
+
+/* ANNUAL */
+
+.annual-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.annual-card{
+    background:#fff;
+    border:1px solid #e9edf2;
+    border-radius:13px;
+    padding:27px 23px;
+    box-shadow:0 6px 22px rgba(16,33,59,.06);
+}
+
+.annual-number{
+    width:44px;
+    height:44px;
+    background:#fff0f0;
+    color:#e50914;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    margin-bottom:14px;
+}
+
+.annual-card h3{
+    margin:0 0 7px;
+    font-size:19px;
+}
+
+.annual-card p{
+    margin:0;
+    color:#687588;
+    font-size:14px;
+}
+
+
+/* SERVICES */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    background:#fff;
+    border:1px solid #edf0f4;
+    border-radius:13px;
+    padding:28px;
+    box-shadow:0 7px 25px rgba(16,33,59,.07);
+}
+
+.service-icon{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.service-card h3{
+    margin:0 0 8px;
+}
+
+.service-card p{
+    color:#697588;
+    font-size:14px;
+}
+
+.service-card a{
+    color:#e50914;
+    font-weight:700;
+}
+
+
+/* RELATED */
+
+.related-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.related-card{
+    display:block;
+    background:#fff;
+    border:1px solid #e8edf2;
+    color:#10213b;
+    padding:23px;
+    border-radius:12px;
+    transition:.2s;
+}
+
+.related-card:hover{
+    transform:translateY(-3px);
+}
+
+.related-card strong{
+    display:block;
+    margin-bottom:5px;
+}
+
+.related-card span{
+    color:#718095;
+    font-size:13px;
+}
+
+
+/* FAQ */
+
+.faq{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid #e9edf2;
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:15px;
+}
+
+.faq-item h3{
+    margin:0 0 8px;
+    font-size:19px;
+}
+
+.faq-item p{
+    margin:0;
+    color:#657185;
+}
+
+
+/* CTA */
+
+.cta{
+    background:
+        linear-gradient(rgba(8,28,52,.78),rgba(8,28,52,.86)),
+        url("nyc-skyline.jpg") center/cover no-repeat;
+
+    color:#fff;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.cta h2{
+    font-size:37px;
+    margin:0 0 7px;
+}
+
+.cta p{
+    margin:0 0 25px;
+    color:#dbe3ed;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#07192e;
+    color:#b8c2cf;
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.footer-brand img{
+    height:48px;
+    width:auto;
+}
+
+.footer-name{
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-subtitle{
+    font-size:12px;
+}
+
+.footer-links a{
+    color:#b8c2cf;
+    margin-left:18px;
+    font-size:13px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+    .nav{
+        padding:12px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+
+        background:
+            linear-gradient(
+                rgba(255,255,255,.92),
+                rgba(255,255,255,.92)
+            ),
+            url("nyc-fire-extinguisher-hero.jpg") center/cover;
+    }
+
+    .hero-content{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:39px;
+    }
+
+    .annual-grid,
+    .service-grid,
+    .related-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+@media(max-width:650px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .quick-grid,
+    .comparison,
+    .check-grid{
+        grid-template-columns:1fr;
+    }
+
+    .quick-item:first-child{
+        border-right:0;
+        border-bottom:1px solid rgba(255,255,255,.18);
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+}
+
+</style>
 
 </head>
 
-<body style="font-family:Arial,sans-serif;margin:0;line-height:1.7;color:#222;background:#f7f7f7;">
 
-<div style="background:#111; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+<body>
 
-  <div style="color:white; font-size:26px; font-weight:bold;">
-    🔥 Fire Safety
-  </div>
 
-  <div>
+<!-- HEADER -->
 
-    <a href="index.html" style="color:white; margin:0 10px; text-decoration:none;">Home</a>
+<header>
 
-    <a href="blog.html" style="color:white; margin:0 10px; text-decoration:none;">News</a>
+<div class="container nav">
 
-    <a href="fire-extinguisher-inspection-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Inspection</a>
+<a href="/" class="logo">
+<img src="logo.png" alt="NYC Fire Safety">
+</a>
 
-    <a href="fire-extinguisher-maintenance-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Maintenance</a>
+<nav class="nav-links">
 
-    <a href="fire-extinguisher-recharge-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Recharge</a>
+<a href="/">Home</a>
 
-    <a href="fire-extinguisher-near-me-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Near Me</a>
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
 
-  </div>
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
+
+<a href="/blog.html">
+News
+</a>
+
+<a href="tel:16462016351"
+class="top-phone">
+☎ 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher inspection service in NYC."
+class="btn btn-green">
+Text for Service
+</a>
+
+</nav>
 
 </div>
 
-<div style="background:#c40000;color:white;padding:55px 20px;text-align:center;">
-<h1>Monthly vs Yearly Fire Extinguisher Inspections in NYC</h1>
+</header>
 
-<p>FDNY Compliance • Fire Safety • Commercial Buildings</p>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-label">
+NYC FIRE EXTINGUISHER GUIDE
 </div>
 
-<div style="max-width:1000px;margin:30px auto;padding:0 20px;">
+<h1>
+Monthly vs Annual
+<span class="red">Fire Extinguisher Inspections in NYC</span>
+</h1>
 
-<section style="background:white;padding:25px;border-radius:10px;margin-bottom:25px;">
-
-<h2>Why Inspections Matter</h2>
-
-<p>
-Fire extinguishers should be inspected regularly to help ensure they are ready for use during an emergency and remain compliant with fire safety requirements.
+<p class="hero-subtitle">
+What's the Difference?
 </p>
 
-</section>
+<p class="hero-description">
+Monthly quick checks and annual professional servicing
+serve different purposes. NYC businesses should understand
+the difference between the two.
+</p>
 
-<section style="background:white;padding:25px;border-radius:10px;margin-bottom:25px;">
 
-<h2>Monthly vs Yearly Inspections</h2>
+<div class="hero-buttons">
 
-<table style="width:100%;border-collapse:collapse;">
-
-<tr>
-<th style="border:1px solid #ddd;padding:10px;">Monthly Inspection</th>
-<th style="border:1px solid #ddd;padding:10px;">Yearly Inspection</th>
-</tr>
-
-<tr>
-<td style="border:1px solid #ddd;padding:10px;">
-Performed by building staff or responsible personnel.
-</td>
-
-<td style="border:1px solid #ddd;padding:10px;">
-Performed by a certified fire extinguisher professional.
-</td>
-</tr>
-
-<tr>
-<td style="border:1px solid #ddd;padding:10px;">
-Visual inspection only.
-</td>
-
-<td style="border:1px solid #ddd;padding:10px;">
-Detailed maintenance and testing.
-</td>
-</tr>
-
-<tr>
-<td style="border:1px solid #ddd;padding:10px;">
-No certification required.
-</td>
-
-<td style="border:1px solid #ddd;padding:10px;">
-Professional inspection tag and documentation.
-</td>
-</tr>
-
-<tr>
-<td style="border:1px solid #ddd;padding:10px;">
-Basic record keeping.
-</td>
-
-<td style="border:1px solid #ddd;padding:10px;">
-Comprehensive documentation and service records.
-</td>
-</tr>
-
-</table>
-
-</section>
-
-<section style="background:white;padding:25px;border-radius:10px;margin-bottom:25px;">
-
-<h2>Monthly Inspection Checklist</h2>
-
-<ul>
-<li>Verify extinguisher is visible</li>
-<li>Check extinguisher is accessible</li>
-<li>Inspect pressure gauge</li>
-<li>Look for physical damage</li>
-<li>Confirm inspection tag is attached</li>
-</ul>
-
-</section>
-
-<section style="background:white;padding:25px;border-radius:10px;margin-bottom:25px;">
-
-<h2>Annual Inspection Benefits</h2>
-
-<ul>
-<li>Professional evaluation</li>
-<li>Maintenance and testing</li>
-<li>Updated inspection tag</li>
-<li>Compliance documentation</li>
-<li>Improved fire safety readiness</li>
-</ul>
-
-</section>
-
-<section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
-
-<h2>Related Articles</h2>
-
-<ul>
-
-<li>
-<a href="fdny-fire-extinguisher-inspection-restaurants-nyc.html">
-FDNY Fire Extinguisher Inspection Tips for NYC Restaurants
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
 </a>
-</li>
 
-<li>
-<a href="how-often-fire-extinguisher-inspection-nyc.html">
-How Often Should Fire Extinguishers Be Inspected in NYC?
+<a href="sms:6462016351?body=Hi, I need fire extinguisher inspection service in NYC."
+class="btn btn-green">
+Text for Inspection
 </a>
-</li>
-
-<li>
-<a href="fdny-fire-extinguisher-violations-nyc.html">
-Common FDNY Fire Extinguisher Violations in NYC
-</a>
-</li>
-
-</ul>
-
-</section>
-  
-
-<section style="background:#111;color:white;padding:30px;border-radius:10px;text-align:center;">
-
-<h2>Need Fire Extinguisher Inspection Service in NYC?</h2>
-
-<p>Call 646-201-6351 today.</p>
-
-</section>
 
 </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUICK ANSWER -->
+
+<div class="quick-bar">
+
+<div class="container quick-grid">
+
+
+<div class="quick-item">
+
+<div class="quick-number">
+MONTHLY
+</div>
+
+<strong>
+Quick Check
+</strong>
+
+<span>
+Routine visual check performed every month
+</span>
+
+</div>
+
+
+<div class="quick-item">
+
+<div class="quick-number">
+ANNUALLY
+</div>
+
+<strong>
+Professional Service
+</strong>
+
+<span>
+Performed by a W-96 holder from an FDNY-approved company
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- INTRO -->
+
+<section>
+
+<div class="container article">
+
+<h2>
+Monthly vs Annual Fire Extinguisher Inspection:
+What's the Difference?
+</h2>
+
+<div class="answer-box">
+
+<strong>
+They are two different types of fire extinguisher checks.
+</strong>
+
+<p>
+The monthly inspection is a routine quick check.
+The annual service is performed by a W-96 Certificate
+of Fitness holder working for an FDNY-approved portable
+fire extinguisher company.
+</p>
+
+</div>
+
+<p>
+FDNY guidance requires portable fire extinguishers
+to be checked monthly. The business owner is responsible
+for selecting a person to perform this monthly inspection,
+which FDNY refers to as a “quick check.”
+</p>
+
+<p>
+At least annually, portable fire extinguishers must
+receive professional service from a W-96 Certificate
+of Fitness holder employed by an FDNY-approved company.
+After the annual service, the W-96 holder replaces
+the portable fire extinguisher tag and records the
+annual service information on the new tag.
+</p>
+
+<p>
+That means a monthly inspection does not replace annual
+professional servicing, and annual servicing does not
+eliminate the need for monthly quick checks.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SIDE BY SIDE -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Monthly vs Annual Inspection
+<span>Side by Side</span>
+</h2>
+
+<p>
+A simple comparison for NYC business owners and property managers
+</p>
+
+</div>
+
+
+<div class="comparison">
+
+
+<!-- MONTHLY -->
+
+<div class="compare-card">
+
+<div class="compare-head monthly-head">
+
+<span>ROUTINE CHECK</span>
+
+<strong>
+Monthly Inspection
+</strong>
+
+</div>
+
+
+<div class="compare-body">
+
+<div class="compare-row">
+
+<small>Frequency</small>
+
+<strong>
+Every Month
+</strong>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Type</small>
+
+<strong>
+Quick Visual Check
+</strong>
+
+<p>
+A routine check of the extinguisher's condition
+and readiness.
+</p>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Who Performs It?</small>
+
+<strong>
+Person Selected by the Business Owner
+</strong>
+
+<p>
+FDNY guidance allows the business owner to designate
+a person to perform the monthly quick check.
+</p>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Record</small>
+
+<strong>
+Date + Name / Initials
+</strong>
+
+<p>
+The inspection record includes the date and
+the name or initials of the person performing it.
+</p>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Tag</small>
+
+<strong>
+Monthly Record
+</strong>
+
+<p>
+The monthly record is kept on the back of the
+PFE tag or by an approved electronic method.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ANNUAL -->
+
+<div class="compare-card">
+
+<div class="compare-head annual-head">
+
+<span>PROFESSIONAL SERVICE</span>
+
+<strong>
+Annual Service
+</strong>
+
+</div>
+
+
+<div class="compare-body">
+
+<div class="compare-row">
+
+<small>Frequency</small>
+
+<strong>
+At Least Annually
+</strong>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Type</small>
+
+<strong>
+Professional Fire Extinguisher Service
+</strong>
+
+<p>
+A professional service rather than the routine
+monthly visual quick check.
+</p>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Who Performs It?</small>
+
+<strong>
+W-96 Certificate of Fitness Holder
+</strong>
+
+<p>
+The W-96 holder must work for an FDNY-approved
+portable fire extinguisher company.
+</p>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Record</small>
+
+<strong>
+Annual Service Record
+</strong>
+
+<p>
+Annual service information is indicated on
+the new portable fire extinguisher tag.
+</p>
+
+</div>
+
+
+<div class="compare-row">
+
+<small>Tag</small>
+
+<strong>
+PFE Tag Replaced
+</strong>
+
+<p>
+FDNY guidance states that the W-96 holder replaces
+the PFE tag after annual service.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MONTHLY CHECKLIST -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+What Is Checked During the
+<span>Monthly Quick Check?</span>
+</h2>
+
+<p>
+FDNY identifies several basic conditions to review each month
+</p>
+
+</div>
+
+
+<div class="check-grid">
+
+
+<div class="check-card">
+
+<div class="check-icon">✓</div>
+
+<div>
+
+<h3>
+Fully Charged
+</h3>
+
+<p>
+Check that the fire extinguisher appears
+to be fully charged.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="check-card">
+
+<div class="check-icon">✓</div>
+
+<div>
+
+<h3>
+Designated Location
+</h3>
+
+<p>
+Confirm the extinguisher remains in
+its designated location.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="check-card">
+
+<div class="check-icon">✓</div>
+
+<div>
+
+<h3>
+No Actuation or Tampering
+</h3>
+
+<p>
+Check that the extinguisher does not show
+evidence of being actuated or tampered with.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="check-card">
+
+<div class="check-icon">✓</div>
+
+<div>
+
+<h3>
+No Obvious Physical Damage
+</h3>
+
+<p>
+Look for obvious physical damage or another
+condition that could prevent operation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="check-card">
+
+<div class="check-icon">✓</div>
+
+<div>
+
+<h3>
+Record the Date
+</h3>
+
+<p>
+The monthly inspection record should include
+the date the quick check was performed.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="check-card">
+
+<div class="check-icon">✓</div>
+
+<div>
+
+<h3>
+Record Name or Initials
+</h3>
+
+<p>
+Include the name or initials of the person
+who performed the monthly inspection.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="important">
+
+<h3>
+A monthly quick check does not replace annual servicing.
+</h3>
+
+<p>
+The two serve different purposes. NYC businesses should
+continue monthly quick checks even when the extinguisher
+has received its annual professional service.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ANNUAL SERVICE -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+What Happens During
+<span>Annual Service?</span>
+</h2>
+
+<p>
+Annual service is handled differently from the monthly quick check
+</p>
+
+</div>
+
+
+<div class="annual-grid">
+
+
+<div class="annual-card">
+
+<div class="annual-number">1</div>
+
+<h3>
+Qualified Service
+</h3>
+
+<p>
+Annual portable fire extinguisher service is performed
+by a W-96 Certificate of Fitness holder working for an
+FDNY-approved servicing company.
+</p>
+
+</div>
+
+
+<div class="annual-card">
+
+<div class="annual-number">2</div>
+
+<h3>
+Equipment Service
+</h3>
+
+<p>
+The extinguisher receives professional service rather
+than only the routine visual quick check performed each month.
+</p>
+
+</div>
+
+
+<div class="annual-card">
+
+<div class="annual-number">3</div>
+
+<h3>
+New PFE Tag
+</h3>
+
+<p>
+After annual service, the W-96 holder replaces the
+portable fire extinguisher tag and records the annual
+service information.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY BOTH -->
+
+<section>
+
+<div class="container article">
+
+<h2>
+Why Do NYC Businesses Need Both?
+</h2>
+
+<p>
+A fire extinguisher can develop a problem between annual
+service visits. It could be moved, discharged, damaged,
+tampered with or otherwise develop a condition that
+affects its readiness.
+</p>
+
+<p>
+The monthly quick check provides a recurring opportunity
+to identify obvious problems. Annual professional service
+provides the separate professional service required for
+portable fire extinguishers.
+</p>
+
+
+<h3>
+Restaurants
+</h3>
+
+<p>
+Restaurant equipment, storage boxes and supplies can
+sometimes interfere with access to portable fire extinguishers.
+Regular monthly checks help restaurant staff notice these issues.
+</p>
+
+
+<h3>
+Retail Stores & Offices
+</h3>
+
+<p>
+Merchandise displays, office furniture and stored materials
+can change throughout the year. Businesses should make sure
+their extinguishers remain in the designated location and
+ready for use.
+</p>
+
+
+<h3>
+Warehouses & Commercial Buildings
+</h3>
+
+<p>
+Larger facilities may contain multiple portable fire
+extinguishers. Consistent monthly records can help businesses
+and property managers keep track of their equipment.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Related Fire Extinguisher
+<span>Services</span>
+</h2>
+
+<p>
+Commercial fire extinguisher service throughout New York City
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service-card">
+
+<div class="service-icon">🔍</div>
+
+<h3>
+Fire Extinguisher Inspection
+</h3>
+
+<p>
+Commercial fire extinguisher inspection service
+for NYC restaurants, offices, stores and other businesses.
+</p>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🛠️</div>
+
+<h3>
+Maintenance
+</h3>
+
+<p>
+Professional maintenance based on extinguisher
+type, condition and service requirements.
+</p>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🧯</div>
+
+<h3>
+Recharge & Refill
+</h3>
+
+<p>
+Recharge service for qualifying extinguishers
+after evaluation of the unit and its condition.
+</p>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge Service →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+<div class="container faq">
+
+<div class="section-title">
+
+<h2>
+Monthly vs Annual Inspection
+<span>FAQ</span>
+</h2>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Are monthly and annual fire extinguisher inspections the same?
+</h3>
+
+<p>
+No. The monthly inspection is a routine quick check.
+Annual service is professional servicing performed by
+a W-96 Certificate of Fitness holder working for an
+FDNY-approved portable fire extinguisher company.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Who can perform the monthly fire extinguisher inspection?
+</h3>
+
+<p>
+FDNY guidance states that the business owner is responsible
+for selecting a person to perform the monthly quick check.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Does the monthly inspection require a W-96 Certificate of Fitness?
+</h3>
+
+<p>
+No. FDNY guidance distinguishes the monthly quick check
+from annual professional servicing. The W-96 requirement
+applies to the annual portable fire extinguisher service.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Who performs the annual fire extinguisher service?
+</h3>
+
+<p>
+At least annually, portable fire extinguishers must be
+serviced by a W-96 Certificate of Fitness holder from an
+FDNY-approved portable fire extinguisher company.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Does annual service replace the monthly inspection?
+</h3>
+
+<p>
+No. Monthly quick checks and annual professional service
+are separate parts of portable fire extinguisher inspection
+and servicing.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- RELATED ARTICLES -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Related NYC Fire Safety
+<span>Guides</span>
+</h2>
+
+</div>
+
+
+<div class="related-grid">
+
+
+<a href="/how-often-fire-extinguisher-inspection-nyc.html"
+class="related-card">
+
+<strong>
+How Often Should Fire Extinguishers Be Inspected in NYC?
+</strong>
+
+<span>
+Learn about monthly checks and annual professional service.
+</span>
+
+</a>
+
+
+<a href="/fdny-fire-extinguisher-inspection-restaurants-nyc.html"
+class="related-card">
+
+<strong>
+Fire Extinguisher Inspection for NYC Restaurants
+</strong>
+
+<span>
+Fire extinguisher inspection information for restaurant owners.
+</span>
+
+</a>
+
+
+<a href="/fdny-fire-extinguisher-violations-nyc.html"
+class="related-card">
+
+<strong>
+Common Fire Extinguisher Issues in NYC
+</strong>
+
+<span>
+Learn about conditions that may create fire safety or compliance concerns.
+</span>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Need Fire Extinguisher Service in NYC?
+</h2>
+
+<p>
+Inspection · Maintenance · Recharge · Commercial Fire Extinguisher Service
+</p>
+
+
+<div class="hero-buttons"
+style="justify-content:center;">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher inspection service in NYC."
+class="btn btn-green">
+Text for Service
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+alt="NYC Fire Safety">
+
+<div>
+
+<div class="footer-name">
+NYC FIRE SAFETY
+</div>
+
+<div class="footer-subtitle">
+Commercial Fire Extinguisher Service
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="/">Home</a>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
+
+<a href="/blog.html">
+News
+</a>
+
+<a href="tel:16462016351">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
+
 
 </body>
 </html>
