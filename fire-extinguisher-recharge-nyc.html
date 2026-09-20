@@ -1,219 +1,1601 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fire Extinguisher Recharge NYC | Recharge & Refill Service</title>
 
-  <title>Fire Extinguisher Recharge NYC | New York Fire Extinguisher Service</title>
+<meta name="description"
+content="Fire extinguisher recharge and refill service in NYC for restaurants, offices, stores, warehouses and commercial buildings. Serving all five boroughs. Call 646-201-6351.">
 
-  <meta name="description" content="Fire extinguisher recharge service in NYC for restaurants, offices, stores, warehouses, and commercial buildings. Call 646-201-6351 today." />
+<style>
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#10213b;
+    background:#fff;
+    line-height:1.65;
+}
+
+a{text-decoration:none;}
+
+.container{
+    width:92%;
+    max-width:1180px;
+    margin:auto;
+}
+
+
+/* HEADER */
+
+header{
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #eee;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+    display:block;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#10213b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:#e50914;
+}
+
+.top-phone{
+    background:#e50914;
+    color:#fff !important;
+    padding:12px 20px;
+    border-radius:30px;
+    box-shadow:0 5px 16px rgba(229,9,20,.25);
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 28px;
+    border-radius:7px;
+    font-size:17px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-red{
+    background:#e50914;
+    color:#fff;
+    box-shadow:0 6px 18px rgba(229,9,20,.25);
+}
+
+.btn-green{
+    background:#20b842;
+    color:#fff;
+    box-shadow:0 6px 18px rgba(32,184,66,.20);
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.99) 0%,
+            rgba(255,255,255,.95) 43%,
+            rgba(255,255,255,.52) 70%,
+            rgba(255,255,255,.10) 100%
+        ),
+        url("fire-extinguisher-inspection.png") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:740px;
+    padding:80px 0;
+}
+
+.hero-label{
+    display:inline-block;
+    background:#fff0f0;
+    color:#e50914;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+    padding:8px 13px;
+    border-radius:25px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.08;
+    letter-spacing:-1.4px;
+    margin:0 0 18px;
+}
+
+.red{
+    color:#e50914;
+}
+
+.hero-subtitle{
+    font-size:25px;
+    font-weight:700;
+    margin:0 0 10px;
+}
+
+.hero-description{
+    font-size:18px;
+    color:#4c586a;
+    max-width:660px;
+    margin-bottom:28px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+
+/* TRUST BAR */
+
+.trust-bar{
+    background:#10213b;
+    color:#fff;
+    padding:19px 0;
+}
+
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    text-align:center;
+}
+
+.trust-item{
+    padding:5px 15px;
+    border-right:1px solid rgba(255,255,255,.16);
+}
+
+.trust-item:last-child{
+    border-right:0;
+}
+
+.trust-item strong{
+    display:block;
+    font-size:16px;
+}
+
+.trust-item span{
+    color:#c8d1dc;
+    font-size:12px;
+}
+
+
+/* GENERAL */
+
+section{
+    padding:75px 0;
+}
+
+.section-light{
+    background:#f6f8fb;
+}
+
+.section-title{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 42px;
+}
+
+.section-title h2{
+    font-size:36px;
+    line-height:1.2;
+    margin:0 0 8px;
+}
+
+.section-title h2 span{
+    color:#e50914;
+}
+
+.section-title p{
+    color:#758092;
+    margin:0;
+}
+
+
+/* INTRO */
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:55px;
+    align-items:center;
+}
+
+.intro-content h2{
+    font-size:36px;
+    line-height:1.2;
+    margin:0 0 18px;
+}
+
+.intro-content p{
+    color:#667286;
+}
+
+.intro-box{
+    background:#10213b;
+    color:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(16,33,59,.16);
+}
+
+.intro-box h3{
+    margin:0 0 20px;
+    font-size:23px;
+}
+
+.intro-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:14px 0;
+}
+
+.check{
+    min-width:28px;
+    height:28px;
+    background:#e50914;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+/* WHEN RECHARGE MAY BE NEEDED */
+
+.recharge-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.recharge-card{
+    background:#fff;
+    border:1px solid #edf0f4;
+    border-radius:13px;
+    padding:27px 23px;
+    box-shadow:0 6px 22px rgba(16,33,59,.06);
+}
+
+.recharge-icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#fff0f0;
+    color:#e50914;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:19px;
+    font-weight:800;
+    margin-bottom:14px;
+}
+
+.recharge-card h3{
+    font-size:19px;
+    margin:0 0 7px;
+}
+
+.recharge-card p{
+    color:#6c7889;
+    font-size:14px;
+    margin:0;
+}
+
+
+/* PROCESS */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.process-card{
+    text-align:center;
+    padding:15px;
+}
+
+.process-number{
+    width:54px;
+    height:54px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#e50914;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.process-card h3{
+    margin:0 0 7px;
+    font-size:19px;
+}
+
+.process-card p{
+    color:#6d7888;
+    font-size:14px;
+}
+
+
+/* BUSINESS */
+
+.business-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:18px;
+    text-align:center;
+}
+
+.business-card{
+    background:#fff;
+    border:1px solid #edf0f4;
+    border-radius:12px;
+    padding:23px 10px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.business-icon{
+    font-size:31px;
+    margin-bottom:7px;
+}
+
+
+/* RELATED SERVICES */
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:13px;
+    padding:28px;
+    border:1px solid #edf0f4;
+    box-shadow:0 7px 25px rgba(16,33,59,.07);
+    transition:.25s;
+}
+
+.service-card:hover{
+    transform:translateY(-4px);
+}
+
+.service-icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.service-card h3{
+    margin:0 0 8px;
+}
+
+.service-card p{
+    color:#697588;
+    font-size:14px;
+}
+
+.service-card a{
+    color:#e50914;
+    font-weight:700;
+}
+
+
+/* AREAS */
+
+.area-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:17px;
+}
+
+.area-card{
+    display:block;
+    background:#fff;
+    color:#10213b;
+    border-radius:11px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.area-card:hover{
+    transform:translateY(-4px);
+}
+
+.area-image{
+    height:135px;
+    background-size:cover;
+    background-position:center;
+    background-color:#dce3ec;
+}
+
+.area-info{
+    padding:14px;
+}
+
+.area-info strong{
+    display:block;
+    font-size:17px;
+}
+
+.area-info span{
+    color:#758092;
+    font-size:13px;
+}
+
+
+/* FAQ */
+
+.faq{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid #e9edf2;
+    border-radius:12px;
+    padding:24px;
+    margin-bottom:15px;
+}
+
+.faq-item h3{
+    margin:0 0 8px;
+    font-size:19px;
+}
+
+.faq-item p{
+    margin:0;
+    color:#657185;
+}
+
+
+/* CTA */
+
+.cta{
+    background:
+        linear-gradient(rgba(8,28,52,.78),rgba(8,28,52,.86)),
+        url("nyc-skyline.jpg") center/cover no-repeat;
+
+    color:#fff;
+    text-align:center;
+    padding:75px 20px;
+}
+
+.cta h2{
+    font-size:37px;
+    margin:0 0 7px;
+}
+
+.cta p{
+    margin:0 0 25px;
+    color:#dbe3ed;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#07192e;
+    color:#b8c2cf;
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.footer-brand img{
+    height:48px;
+    width:auto;
+}
+
+.footer-name{
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer-subtitle{
+    font-size:12px;
+    margin-top:3px;
+}
+
+.footer-links a{
+    color:#b8c2cf;
+    margin-left:18px;
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+    .nav{
+        padding:12px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        min-height:auto;
+
+        background:
+            linear-gradient(
+                rgba(255,255,255,.92),
+                rgba(255,255,255,.92)
+            ),
+            url("fire-extinguisher-inspection.png") center/cover;
+    }
+
+    .hero-content{
+        padding:65px 0;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .intro-grid{
+        grid-template-columns:1fr;
+    }
+
+    .recharge-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .business-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .area-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-item{
+        border:0;
+        padding:12px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    .hero-subtitle{
+        font-size:21px;
+    }
+
+    .recharge-grid,
+    .process-grid,
+    .area-grid{
+        grid-template-columns:1fr;
+    }
+
+    .business-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .trust-grid{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+}
+
+</style>
 
 </head>
 
-<body style="font-family: Arial, sans-serif; margin:0; line-height:1.7; color:#222; background:#f7f7f7;">
 
-  <div style="background:#111; padding:14px 20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;">
+<body>
 
-    <div style="color:white; font-size:26px; font-weight:bold;">
-      🔥 Fire Safety
-    </div>
 
-    <div>
+<!-- HEADER -->
 
-      <a href="index.html" style="color:white; margin:0 10px; text-decoration:none;">Home</a>
+<header>
 
-      <a href="fire-extinguisher-inspection-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Inspection</a>
+<div class="container nav">
 
-      <a href="fire-extinguisher-maintenance-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Maintenance</a>
+<a href="/" class="logo">
+<img src="logo.png" alt="NYC Fire Safety">
+</a>
 
-      <a href="fire-extinguisher-recharge-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Recharge</a>
+<nav class="nav-links">
 
-      <a href="fire-extinguisher-near-me-nyc.html" style="color:white; margin:0 10px; text-decoration:none;">Near Me</a>
+<a href="/">Home</a>
 
-    </div>
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
 
-  </div>
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
 
-  <div style="background:#c40000; color:white; padding:55px 20px; text-align:center;">
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
 
-    <h1 style="font-size:36px; margin-bottom:10px;">
-      Fire Extinguisher Recharge NYC
-    </h1>
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
 
-    <p style="font-size:20px;">
-      Recharge • Refill • Maintenance • Same Day Service
-    </p>
+<a href="/blog.html">
+News
+</a>
 
-    <p>
-      Fast FDNY Compliant Recharge Service for NYC Businesses
-    </p>
+<a href="tel:16462016351"
+class="top-phone">
+☎ 646-201-6351
+</a>
 
-    <div style="background:#ff4d00; color:white; padding:14px; margin:18px auto; font-size:22px; font-weight:bold; text-align:center; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.25); letter-spacing:1px; max-width:900px;">
+<a href="sms:6462016351?body=Hi, I need fire extinguisher recharge service in NYC."
+class="btn btn-green">
+Text for Service
+</a>
 
-      🔥 OVER 1000+ FIRE EXTINGUISHERS RECHARGED & SERVICED EVERY WEEK IN NYC 🔥
+</nav>
 
-    </div>
+</div>
 
-    <p>
+</header>
 
-      <a href="tel:16462016351"
 
-      style="background:white; color:#c40000; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block; margin:6px;">
+<!-- HERO -->
 
-      Call 646-201-6351
+<section class="hero">
 
-      </a>
+<div class="container">
 
-      <a href="https://wa.me/16462016351?text=Hi%20I%20need%20fire%20extinguisher%20recharge%20service%20in%20NYC"
+<div class="hero-content">
 
-      style="background:#25D366; color:white; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block; margin:6px;">
+<div class="hero-label">
+NYC COMMERCIAL FIRE EXTINGUISHER SERVICE
+</div>
 
-      WhatsApp Us
+<h1>
+Fire Extinguisher
+<span class="red">Recharge NYC</span>
+</h1>
 
-      </a>
+<p class="hero-subtitle">
+Recharge · Refill · Commercial Service
+</p>
 
-    </p>
+<p class="hero-description">
+Fire extinguisher recharge and refill service for
+New York City restaurants, stores, offices, warehouses,
+property managers and commercial buildings.
+</p>
 
-  </div>
 
-  <div style="max-width:1000px; margin:30px auto; padding:0 20px;">
+<div class="hero-buttons">
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
+</a>
 
-      <h2>Fire Extinguisher Recharge Service NYC</h2>
+<a href="sms:6462016351?body=Hi, I need fire extinguisher recharge service in NYC."
+class="btn btn-green">
+Text for Recharge
+</a>
 
-      <p>
-        We offer professional
-        <strong>fire extinguisher recharge service in New York City</strong>
-        for restaurants, offices, retail stores, warehouses, and commercial buildings.
-      </p>
+</div>
 
-      <p>
-        Our recharge service is FDNY compliant and available throughout NYC.
-      </p>
+</div>
 
-      <p>
-        <strong>Same day fire extinguisher recharge available.</strong>
-      </p>
+</div>
 
-    </section>
+</section>
 
-    <section style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; margin-bottom:25px;">
 
-      <div style="background:white; padding:22px; border-radius:10px; border:1px solid #ddd;">
+<!-- TRUST -->
 
-        <h2>Restaurant Service</h2>
+<div class="trust-bar">
 
-        <p>Recharge service for restaurant fire extinguishers and kitchen systems.</p>
+<div class="container trust-grid">
 
-      </div>
+<div class="trust-item">
+<strong>NYC Recharge</strong>
+<span>Commercial Fire Extinguishers</span>
+</div>
 
-      <div style="background:white; padding:22px; border-radius:10px; border:1px solid #ddd;">
+<div class="trust-item">
+<strong>5 Boroughs</strong>
+<span>New York City Coverage</span>
+</div>
 
-        <h2>Commercial Buildings</h2>
+<div class="trust-item">
+<strong>Commercial Service</strong>
+<span>Restaurants · Offices · Stores</span>
+</div>
 
-        <p>Professional recharge service for offices, buildings, and commercial spaces.</p>
+<div class="trust-item">
+<strong>Fast Scheduling</strong>
+<span>Call or Text</span>
+</div>
 
-      </div>
+</div>
 
-      <div style="background:white; padding:22px; border-radius:10px; border:1px solid #ddd;">
+</div>
 
-        <h2>Retail & Warehouse</h2>
 
-        <p>Recharge and refill service for retail stores and warehouse facilities.</p>
+<!-- INTRO -->
 
-      </div>
+<section>
 
-    </section>
+<div class="container">
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<div class="intro-grid">
 
-      <h2>Related Services</h2>
+<div class="intro-content">
 
-      <p>
+<h2>
+Fire Extinguisher
+<span class="red">Recharge & Refill in NYC</span>
+</h2>
 
-        <a href="fire-extinguisher-inspection-nyc.html" style="margin-right:15px;">
-          Inspection NYC
-        </a>
+<p>
+NYC Fire Safety provides commercial fire extinguisher
+recharge service for businesses throughout New York City.
+An extinguisher that has been discharged or has a pressure
+concern should be professionally evaluated before it is
+returned to service.
+</p>
 
-        <a href="fire-extinguisher-maintenance-nyc.html" style="margin-right:15px;">
-          Maintenance NYC
-        </a>
+<p>
+Not every fire extinguisher should automatically be
+recharged. The extinguisher type, physical condition and
+service needs should first be evaluated to determine
+the appropriate next step.
+</p>
 
-        <a href="fire-extinguisher-near-me-nyc.html" style="margin-right:15px;">
-          Near Me Service
-        </a>
+<p>
+We work with restaurants, retail stores, offices,
+warehouses, commercial buildings and property managers
+throughout NYC.
+</p>
 
-      </p>
+</div>
 
-    </section>
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+<div class="intro-box">
 
-      <h2>Service Areas</h2>
+<h3>
+NYC Recharge Service
+</h3>
 
-      <p>
-        Manhattan, Brooklyn, Queens, Bronx, Staten Island and surrounding NYC areas.
-      </p>
+<div class="intro-item">
+<span class="check">✓</span>
+Fire Extinguisher Recharge
+</div>
 
-      <p>
+<div class="intro-item">
+<span class="check">✓</span>
+Recharge & Refill Evaluation
+</div>
 
-        <a href="fire-extinguisher-brooklyn.html" style="margin-right:15px;">Brooklyn</a>
+<div class="intro-item">
+<span class="check">✓</span>
+Used Fire Extinguisher Service
+</div>
 
-        <a href="fire-extinguisher-bronx.html" style="margin-right:15px;">Bronx</a>
+<div class="intro-item">
+<span class="check">✓</span>
+Restaurant Fire Extinguishers
+</div>
 
-        <a href="fire-extinguisher-queens.html" style="margin-right:15px;">Queens</a>
+<div class="intro-item">
+<span class="check">✓</span>
+Commercial Equipment
+</div>
 
-        <a href="fire-extinguisher-manhattan.html" style="margin-right:15px;">Manhattan</a>
+<div class="intro-item">
+<span class="check">✓</span>
+NYC Five Borough Coverage
+</div>
 
-      </p>
+</div>
 
-    </section>
+</div>
 
-    <section style="background:white; padding:25px; border-radius:10px; margin-bottom:25px;">
+</div>
 
-      <h2>Why Choose Us</h2>
+</section>
 
-      <ul>
 
-        <li>Fast response</li>
+<!-- WHEN RECHARGE MAY BE NEEDED -->
 
-        <li>FDNY compliant service</li>
+<section class="section-light">
 
-        <li>Same day service available</li>
+<div class="container">
 
-        <li>Commercial and restaurant experience</li>
+<div class="section-title">
 
-        <li>Serving all NYC boroughs</li>
+<h2>
+When Might a Fire Extinguisher
+<span>Need Recharge?</span>
+</h2>
 
-      </ul>
+<p>
+The correct service depends on the extinguisher and its condition
+</p>
 
-    </section>
+</div>
 
-    <section style="background:#111; color:white; padding:30px; border-radius:10px; text-align:center;">
 
-      <h2>Need Fire Extinguisher Recharge in NYC?</h2>
+<div class="recharge-grid">
 
-      <p>
-        Call today for professional recharge and refill service.
-      </p>
 
-      <p>
+<div class="recharge-card">
 
-        <a href="tel:16462016351"
+<div class="recharge-icon">1</div>
 
-        style="background:#c40000; color:white; padding:14px 24px; text-decoration:none; font-weight:bold; border-radius:6px; display:inline-block;">
+<h3>
+After Discharge
+</h3>
 
-        Call 646-201-6351
+<p>
+If a fire extinguisher has been used, even briefly,
+it should be professionally evaluated before being
+returned to service.
+</p>
 
-        </a>
+</div>
 
-      </p>
 
-    </section>
+<div class="recharge-card">
 
-  </div>
+<div class="recharge-icon">2</div>
+
+<h3>
+Pressure Concern
+</h3>
+
+<p>
+If an extinguisher equipped with a pressure gauge
+shows an abnormal reading, professional evaluation
+may be appropriate.
+</p>
+
+</div>
+
+
+<div class="recharge-card">
+
+<div class="recharge-icon">3</div>
+
+<h3>
+Partial Discharge
+</h3>
+
+<p>
+An extinguisher that has been partially discharged
+should not simply be placed back in its original
+location without evaluation.
+</p>
+
+</div>
+
+
+<div class="recharge-card">
+
+<div class="recharge-icon">4</div>
+
+<h3>
+Service Identifies a Need
+</h3>
+
+<p>
+Inspection or maintenance may identify a condition
+where recharge or another type of service should
+be considered.
+</p>
+
+</div>
+
+
+<div class="recharge-card">
+
+<div class="recharge-icon">5</div>
+
+<h3>
+Unknown Condition
+</h3>
+
+<p>
+If the extinguisher's service history or current
+condition is unclear, professional evaluation can
+help determine the appropriate next step.
+</p>
+
+</div>
+
+
+<div class="recharge-card">
+
+<div class="recharge-icon">6</div>
+
+<h3>
+Commercial Equipment
+</h3>
+
+<p>
+Businesses with multiple extinguishers can have
+their units evaluated to identify which equipment
+may require additional service.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Fire Extinguisher Recharge
+<span>Process</span>
+</h2>
+
+<p>
+The extinguisher should be evaluated before determining the appropriate service
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-card">
+
+<div class="process-number">1</div>
+
+<h3>
+Contact Us
+</h3>
+
+<p>
+Call or text with your NYC location and information
+about the extinguisher or extinguishers.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">2</div>
+
+<h3>
+Evaluate the Unit
+</h3>
+
+<p>
+The extinguisher type and condition help determine
+whether recharge or another service is appropriate.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">3</div>
+
+<h3>
+Service as Appropriate
+</h3>
+
+<p>
+Qualifying equipment can receive the appropriate
+service based on the condition of the extinguisher.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">4</div>
+
+<h3>
+Return to Service
+</h3>
+
+<p>
+Equipment should only be returned to service after
+the necessary professional service has been completed.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BUSINESS TYPES -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Commercial Customers
+<span>We Serve</span>
+</h2>
+
+<p>
+Fire extinguisher recharge service for businesses throughout NYC
+</p>
+
+</div>
+
+
+<div class="business-grid">
+
+<div class="business-card">
+<div class="business-icon">🍴</div>
+Restaurants
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏪</div>
+Retail Stores
+</div>
+
+<div class="business-card">
+<div class="business-icon">💻</div>
+Offices
+</div>
+
+<div class="business-card">
+<div class="business-icon">📦</div>
+Warehouses
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏢</div>
+Commercial Buildings
+</div>
+
+<div class="business-card">
+<div class="business-icon">🏠</div>
+Property Managers
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RELATED SERVICES -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Related Fire Extinguisher
+<span>Services</span>
+</h2>
+
+<p>
+Inspection and maintenance may help determine when additional service is needed
+</p>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service-card">
+
+<div class="service-icon">🔍</div>
+
+<h3>
+Fire Extinguisher Inspection
+</h3>
+
+<p>
+Commercial fire extinguisher inspection for NYC
+restaurants, offices, stores, warehouses and
+commercial buildings.
+</p>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🛠️</div>
+
+<h3>
+Fire Extinguisher Maintenance
+</h3>
+
+<p>
+Maintenance service based on extinguisher type,
+condition and individual service requirements.
+</p>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance Service →
+</a>
+
+</div>
+
+
+<div class="service-card">
+
+<div class="service-icon">🔥</div>
+
+<h3>
+Fire Suppression
+</h3>
+
+<p>
+Commercial kitchen fire suppression system service
+for restaurants and food-service businesses.
+</p>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICE AREAS -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+Fire Extinguisher Recharge
+<span>Across NYC</span>
+</h2>
+
+<p>
+Commercial service throughout New York City's five boroughs
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+
+<a href="/fire-extinguisher-manhattan.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/manhattan.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Manhattan</strong>
+<span>Recharge & Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-queens.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/flushing.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Queens</strong>
+<span>Recharge & Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-brooklyn.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/brooklyn.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Brooklyn</strong>
+<span>Recharge & Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-bronx.html"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/bronx.jpeg');">
+</div>
+
+<div class="area-info">
+<strong>Bronx</strong>
+<span>Recharge & Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+<a href="/fire-extinguisher-near-me-nyc.html#staten-island"
+class="area-card">
+
+<div class="area-image"
+style="background-image:url('cn/staten-island.jpg');">
+</div>
+
+<div class="area-info">
+<strong>Staten Island</strong>
+<span>Recharge & Fire Extinguisher Service</span>
+</div>
+
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+<div class="container faq">
+
+<div class="section-title">
+
+<h2>
+Fire Extinguisher Recharge
+<span>FAQ</span>
+</h2>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you provide fire extinguisher recharge in NYC?
+</h3>
+
+<p>
+We provide commercial fire extinguisher service
+throughout New York City. Recharge availability
+depends on the extinguisher type and condition.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Does a fire extinguisher need to be recharged after it is used?
+</h3>
+
+<p>
+A discharged extinguisher should be professionally
+evaluated before being returned to service. The
+appropriate next step depends on the extinguisher
+and its condition.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Can a partially used fire extinguisher be recharged?
+</h3>
+
+<p>
+A partially discharged extinguisher should be
+evaluated rather than simply returned to its
+original location. Recharge may be appropriate
+depending on the unit and its condition.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Can a low-pressure fire extinguisher be recharged?
+</h3>
+
+<p>
+That depends on the extinguisher type and condition.
+A professional evaluation can help determine whether
+recharge or another service is appropriate.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you recharge restaurant fire extinguishers?
+</h3>
+
+<p>
+Restaurants and food-service businesses are among
+the commercial customers we serve. Contact us with
+information about the extinguisher and your NYC location.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<h3>
+Do you provide recharge service throughout the five boroughs?
+</h3>
+
+<p>
+We provide commercial fire extinguisher service
+throughout Manhattan, Queens, Brooklyn, the Bronx
+and Staten Island.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Need Fire Extinguisher Recharge in NYC?
+</h2>
+
+<p>
+Recharge · Refill · Maintenance · Commercial Fire Extinguisher Service
+</p>
+
+<div class="hero-buttons"
+style="justify-content:center;">
+
+<a href="tel:16462016351"
+class="btn btn-red">
+☎ Call 646-201-6351
+</a>
+
+<a href="sms:6462016351?body=Hi, I need fire extinguisher recharge service in NYC."
+class="btn btn-green">
+Text for Recharge
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-content">
+
+<div class="footer-brand">
+
+<img src="logo.png"
+alt="NYC Fire Safety">
+
+<div>
+
+<div class="footer-name">
+NYC FIRE SAFETY
+</div>
+
+<div class="footer-subtitle">
+Commercial Fire Extinguisher Service
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-links">
+
+<a href="/">Home</a>
+
+<a href="/fire-extinguisher-inspection-nyc.html">
+Inspection
+</a>
+
+<a href="/fire-extinguisher-maintenance-nyc.html">
+Maintenance
+</a>
+
+<a href="/fire-extinguisher-recharge-nyc.html">
+Recharge
+</a>
+
+<a href="/fire-suppression-system-nyc.html">
+Fire Suppression
+</a>
+
+<a href="/blog.html">
+News
+</a>
+
+<a href="tel:16462016351">
+Contact
+</a>
+
+</div>
+
+</div>
+
+</footer>
 
 </body>
 </html>
